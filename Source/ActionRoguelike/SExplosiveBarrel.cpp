@@ -17,8 +17,8 @@ ASExplosiveBarrel::ASExplosiveBarrel()
 
 	RadialForce = CreateDefaultSubobject<URadialForceComponent>("RadialForce");
 	RadialForce->SetupAttachment(Mesh);
-	// RadialForce->Radius = 1000.f;
-	// RadialForce->Falloff = RIF_Constant;
+	RadialForce->Radius = 1000.f;
+	RadialForce->Falloff = RIF_Constant;
 }
 
 // Called when the game starts or when spawned
