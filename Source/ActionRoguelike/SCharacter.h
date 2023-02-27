@@ -13,7 +13,7 @@ class UCameraComponent;
 class USpringArmComponent;
 class USInteractionComponent;
 class UAnimMontage;
-class SAttributeComponent;
+class USAttributeComponent;
 
 UCLASS() //property system
 class ACTIONROGUELIKE_API ASCharacter : public ACharacter
@@ -42,9 +42,9 @@ protected:
 
 	UPROPERTY(VisibleAnywhere)
 	USInteractionComponent* InteractionComponent;
-
-	// UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
-	// USAttributeComponent* AttributeComp;
+	
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
+	USAttributeComponent* AttributeComp;
 	
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

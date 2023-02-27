@@ -5,16 +5,18 @@
 #include "SAttributeComponent.h"
 
 // Sets default values
-ASAttributeComponent::ASAttributeComponent()
+USAttributeComponent::USAttributeComponent()
 {
 	Health = 100.f;
 }
 
 
-bool ASAttributeComponent::ApplyHealthChange(float Delta)
+bool USAttributeComponent::ApplyHealthChange(float Delta)
 {
 	if (!Delta) return false;
 	Health += Delta;
+	//OnHealthChanged.Brodcast(nullptr, this, Health, Delta);
+	OnHealthChanged.Broadcast(nullptr, this, Health, Delta);
 	return true;
 }
 
