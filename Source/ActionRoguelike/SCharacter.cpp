@@ -27,6 +27,23 @@ ASCharacter::ASCharacter()
 	
 	GetCharacterMovement()->bOrientRotationToMovement = true;
 	bUseControllerRotationYaw = false;
+
+	AttackAnimDelay = 0.2f;
+}
+
+void ASCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
+{
+	Super::SetupPlayerInputComponent(PlayerInputComponent);
+
+	PlayerInputComponent->BindAxis("MoveForward", this, &ASCharacter::MoveForward);
+	PlayerInputComponent->BindAxis("MoveRight", this, &ASCharacter::MoveRight);
+
+	PlayerInputComponent->BindAxis("Turn", this, &APawn::AddControllerYawInput);
+	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
+
+	PlayerInputComponent->BindAction("PrimaryAttack", IE_Pressed, this, &ASCharacter::PrimaryAttack);
+	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ASCharacter::Jump);
+	PlayerInputComponent->BindAction("PrimaryInteract", IE_Pressed, this, &ASCharacter::PrimaryInteract);
 }
 
 // Called when the game starts or when spawned
@@ -42,20 +59,6 @@ void ASCharacter::Tick(float DeltaTime)
 }
 
 // Called to bind functionality to input
-void ASCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
-{
-	Super::SetupPlayerInputComponent(PlayerInputComponent);
-
-	PlayerInputComponent->BindAxis("MoveForward", this, &ASCharacter::MoveForward);
-	PlayerInputComponent->BindAxis("MoveRight", this, &ASCharacter::MoveRight);
-
-	PlayerInputComponent->BindAxis("Turn", this, &APawn::AddControllerYawInput);
-	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
-
-	PlayerInputComponent->BindAction("PrimaryAttack", IE_Pressed, this, &ASCharacter::PrimaryAttack);
-	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ASCharacter::Jump);
-	PlayerInputComponent->BindAction("PrimaryInteract", IE_Pressed, this, &ASCharacter::PrimaryInteract);
-}
 
 void ASCharacter::MoveForward(float value)
 {
@@ -80,11 +83,64 @@ void ASCharacter::MoveRight(float value)
 	AddMovementInput(RightVector, value);
 }
 
+void ASCharacter::SpawnProjectile(TSubclassOf<AActor> ClassTosSpawn)
+{
+	if (ensureAlways(ClassTosSpawn))
+	{
+		FVector HandLocation = GetMesh()->GetSocketLocation("Muzzle_01");
+
+		FActorSpawnParameters SpawnParams;
+		SpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
+		SpawnParams.Instigator = this;
+
+		FCollisionShape Shape;
+		Shape.SetSphere(20.f);
+
+		// Ignore Player
+		FCollisionQueryParams Params;
+		Params.AddIgnoredActor(this);
+
+		FCollisionObjectQueryParams ObjParams;
+		ObjParams.AddObjectTypesToQuery(ECC_WorldDynamic);
+		ObjParams.AddObjectTypesToQuery(ECC_WorldDynamic);
+		ObjParams.AddObjectTypesToQuery(ECC_Pawn);
+
+		FVector TraceStart = CameraComp->GetComponentLocation();
+
+		FVector TraceEnd = CameraComp->GetComponentLocation() + (GetControlRotation().Vector() * 5000);
+
+		FHitResult Hit;
+		// true if blocking Hit
+		if (GetWorld()->SweepSingleByObjectType(Hit, TraceStart, TraceEnd, FQuat::Identity, ObjParams, Shape, Params))
+		{
+			TraceEnd = Hit.ImpactPoint;
+		}
+
+		FRotator ProjRotation = FRotationMatrix::MakeFromX(TraceEnd - HandLocation).Rotator();
+
+		FTransform SpawnTM = FTransform(ProjRotation, HandLocation);
+		GetWorld()->SpawnActor<AActor>(ClassTosSpawn, SpawnTM, SpawnParams);
+	}
+}
+
 void ASCharacter::PrimaryAttack()
 {
 	PlayAnimMontage(AttackAnim);
 	float TimerRate = 0.18f;
 	GetWorldTimerManager().SetTimer(TimerHandle_PrimaryAttack, this, &ASCharacter::PrimaryAttack_TimeElapsed, TimerRate);
+}
+
+void ASCharacter::BlackHoleAttack()
+{
+	PlayAnimMontage(AttackAnim);
+
+	GetWorldTimerManager().SetTimer(TimerHandle_BlackHoleAttack, this, &ASCharacter::BlackHoleAttack_TimeElapsed, AttackAnimDelay);
+}
+
+void ASCharacter::Dash()
+{
+	PlayAnimMontage(AttackAnim);
+	GetWorldTimerManager().SetTimer(TimerHandle_Dash, this, &ASCharacter::Dash_TimeElapsed, AttackAnimDelay);
 }
 
 void ASCharacter::PrimaryInteract()
@@ -94,15 +150,15 @@ void ASCharacter::PrimaryInteract()
 
 void ASCharacter::PrimaryAttack_TimeElapsed()
 {
-	if (ensureAlways(ProjectileClass))  // don't ever run ensureAlways on tick
-	{
-		FVector HandLocation = GetMesh()->GetSocketLocation("Muzzle_01");
-		FTransform SpawnTM = FTransform(GetControlRotation(), HandLocation);
+	SpawnProjectile(ProjectileClass);
+}
 
-		FActorSpawnParameters SpawnParams;
-		SpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
-		SpawnParams.Instigator = this;
-		
-		GetWorld()->SpawnActor<AActor>(ProjectileClass, SpawnTM, SpawnParams);
-	}
+void ASCharacter::BlackHoleAttack_TimeElapsed()
+{
+	SpawnProjectile(BlackHoleProjectileClass);
+}
+
+void ASCharacter::Dash_TimeElapsed()
+{
+	SpawnProjectile(DashProjectileClass);
 }
