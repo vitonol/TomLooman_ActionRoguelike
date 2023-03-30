@@ -107,17 +107,20 @@ void ASCharacter::SpawnProjectile(TSubclassOf<AActor> ClassTosSpawn)
 
 		FVector TraceStart = CameraComp->GetComponentLocation();
 
+		// end point far the look-at distance (not too far, still adjust somewhat towards crosshair on a miss)
 		FVector TraceEnd = CameraComp->GetComponentLocation() + (GetControlRotation().Vector() * 5000);
 
 		FHitResult Hit;
 		// true if blocking Hit
 		if (GetWorld()->SweepSingleByObjectType(Hit, TraceStart, TraceEnd, FQuat::Identity, ObjParams, Shape, Params))
 		{
+			//overwite trace end with impact point in world 
 			TraceEnd = Hit.ImpactPoint;
 		}
 
+		// find new direction / rotation from Hand pointing to impact point in world
 		FRotator ProjRotation = FRotationMatrix::MakeFromX(TraceEnd - HandLocation).Rotator();
-
+		
 		FTransform SpawnTM = FTransform(ProjRotation, HandLocation);
 		GetWorld()->SpawnActor<AActor>(ClassTosSpawn, SpawnTM, SpawnParams);
 	}
