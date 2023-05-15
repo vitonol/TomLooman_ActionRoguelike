@@ -31,6 +31,12 @@ ASCharacter::ASCharacter()
 	AttackAnimDelay = 0.2f;
 }
 
+void ASCharacter::PostInitializeComponents()
+{
+	Super::PostInitializeComponents();
+	AttributeComp->OnHealthChanged.AddDynamic(this, &ASCharacter::OnHealthChanged);
+}
+
 void ASCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
@@ -50,6 +56,7 @@ void ASCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 void ASCharacter::BeginPlay()
 {
 	Super::BeginPlay();
+	MID = GetMesh()->CreateDynamicMaterialInstance(0);
 }
 
 // Called every frame
@@ -125,6 +132,24 @@ void ASCharacter::SpawnProjectile(TSubclassOf<AActor> ClassTosSpawn)
 		GetWorld()->SpawnActor<AActor>(ClassTosSpawn, SpawnTM, SpawnParams);
 	}
 }
+
+void ASCharacter::OnHealthChanged(AActor* InstigatorActor, USAttributeComponent* OwningComp, float NewHealth, float Delta)
+{
+	if (GetMesh())
+	{
+		FVector4 CurrentColor = MID->K2_GetVectorParameterValue("ColorBottom");
+		MID->SetScalarParameterValue("TimeToHit", 1.f);
+		// GetMesh()->SetScalarParameterValueOnMaterials("TimeToHit", 1.f);
+		// MID->SetVectorParameterValue("ColorBottom",  CurrentColor + FVector4(0.2f, 0.2f,0.2f, 0.3f));
+		GetMesh()->SetVectorParameterValueOnMaterials("ColorBottom",  CurrentColor + FVector4(0.2f, 0.2f,0.2f, 0.3f));
+	}
+	if (NewHealth <= 0.f && Delta < 0.f)
+	{
+		APlayerController* PC = Cast<APlayerController>(GetWorld()->GetFirstPlayerController());
+ 		DisableInput(PC);
+	}
+}
+
 
 void ASCharacter::PrimaryAttack()
 {

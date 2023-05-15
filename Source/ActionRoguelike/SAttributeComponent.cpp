@@ -10,6 +10,11 @@ USAttributeComponent::USAttributeComponent()
 	Health = 100.f;
 }
 
+bool USAttributeComponent::IsAlive() const // read only access
+{
+	return Health > 0.0f;
+}
+
 
 bool USAttributeComponent::ApplyHealthChange(float Delta)
 {

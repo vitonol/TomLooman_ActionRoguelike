@@ -44,6 +44,7 @@ public:
 	ASCharacter();
 
 protected:
+	UMaterialInstanceDynamic* MID;
 
 	UPROPERTY(VisibleAnywhere)
 	USpringArmComponent* SpringArmComp;
@@ -61,18 +62,29 @@ protected:
 	virtual void BeginPlay() override;
 
 	void MoveForward(float value);
+	
 	void MoveRight(float value);
-	void PrimaryInteract();
 	
 	void PrimaryAttack();
+
 	void PrimaryAttack_TimeElapsed();
+	
+	void BlackHoleAttack();
+
 	void BlackHoleAttack_TimeElapsed();
+
+	void PrimaryInteract();
+	
+	void Dash();
+	
 	void Dash_TimeElapsed();
 	
-
 	void SpawnProjectile(TSubclassOf<AActor> ClassTosSpawn);
-	void BlackHoleAttack();
-	void Dash();
+		
+	UFUNCTION()
+	void OnHealthChanged(AActor* InstigatorActor, USAttributeComponent* OwningComp, float NewHealth, float Delta);
+
+	virtual void PostInitializeComponents() override; // a bit better way to bind events, vs constructor
 	
 public:	
 	// Called every frame

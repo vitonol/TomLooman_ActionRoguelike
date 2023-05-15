@@ -28,6 +28,10 @@ protected:
 	float Health;
 	
 public:
+
+	UFUNCTION(BlueprintCallable)
+	bool IsAlive() const;
+	
 	UPROPERTY(BlueprintAssignable) // lets us in UI to bind or subscribe
  	FOnHealthChanged OnHealthChanged;
 	
