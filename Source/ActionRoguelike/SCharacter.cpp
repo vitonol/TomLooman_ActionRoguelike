@@ -143,7 +143,7 @@ void ASCharacter::OnHealthChanged(AActor* InstigatorActor, USAttributeComponent*
 		// MID->SetVectorParameterValue("ColorBottom",  CurrentColor + FVector4(0.2f, 0.2f,0.2f, 0.3f));
 		GetMesh()->SetVectorParameterValueOnMaterials("ColorBottom",  CurrentColor + FVector4(0.2f, 0.2f,0.2f, 0.3f));
 	}
-	if (NewHealth <= 0.f && Delta < 0.f)
+	if (NewHealth <= 0.f)
 	{
 		APlayerController* PC = Cast<APlayerController>(GetWorld()->GetFirstPlayerController());
  		DisableInput(PC);
