@@ -10,14 +10,17 @@ void ASAIController::BeginPlay()
 {
 	Super::BeginPlay();
 
-	RunBehaviorTree(BehaviorTree);
+	if (ensureMsgf(BehaviorTree, TEXT("Behaviour Tree is Nullptr! Please assign behaviour tree in your AI controller")))
+	{
+		RunBehaviorTree(BehaviorTree);
+	}
 
 	//staring code:
-	APawn* MyPawn = UGameplayStatics::GetPlayerPawn(this, 0); // player index > 0 would normally be used in case of a split screen
-	if (MyPawn)
-	{
-		GetBlackboardComponent()->SetValueAsVector("MoveToLocation", MyPawn->GetActorLocation());
-
-		GetBlackboardComponent()->SetValueAsObject("TargetActor", MyPawn);
-	}
+	// APawn* MyPawn = UGameplayStatics::GetPlayerPawn(this, 0); // player index > 0 would normally be used in case of a split screen
+	// if (MyPawn)
+	// {
+	// 	GetBlackboardComponent()->SetValueAsVector("MoveToLocation", MyPawn->GetActorLocation());
+	//
+	// 	GetBlackboardComponent()->SetValueAsObject("TargetActor", MyPawn);
+	// }
 }
