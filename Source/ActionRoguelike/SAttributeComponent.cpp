@@ -18,13 +18,13 @@ bool USAttributeComponent::IsAlive() const // read only access
 
 bool USAttributeComponent::ApplyHealthChange(float Delta)
 {
-	if (Health += Delta < 0)
-	{
-		Health = 0;
-		return false;
-	}
+	// if (!Delta) return false;
+	// if (Health += Delta < 0)
+	// {
+	// 	Health = 0;
+	// 	return false;
+	// }
 	
-	if (!Delta) return false;
 	Health += Delta;
 	OnHealthChanged.Broadcast(nullptr, this, Health, Delta);
 	return true;

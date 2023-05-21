@@ -7,6 +7,7 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "SInteractionComponent.h"
 #include "SAttributeComponent.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 ASCharacter::ASCharacter()
@@ -29,6 +30,8 @@ ASCharacter::ASCharacter()
 	bUseControllerRotationYaw = false;
 
 	AttackAnimDelay = 0.2f;
+	HandSocketName = "Muzzle_01";
+	TimeToHitParamName = "TimeToHit";
 }
 
 void ASCharacter::PostInitializeComponents()
@@ -48,10 +51,12 @@ void ASCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
 
 	PlayerInputComponent->BindAction("PrimaryAttack", IE_Pressed, this, &ASCharacter::PrimaryAttack);
-	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ASCharacter::Jump);
+	PlayerInputComponent->BindAction("SecondaryInteracft", IE_Pressed, this, &ASCharacter::BlackHoleAttack);
+	PlayerInputComponent->BindAction("Dash", IE_Pressed, this, &ASCharacter::Dash);
 	PlayerInputComponent->BindAction("PrimaryInteract", IE_Pressed, this, &ASCharacter::PrimaryInteract);
-}
 
+	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ASCharacter::Jump);
+}
 // Called when the game starts or when spawned
 void ASCharacter::BeginPlay()
 {
@@ -90,11 +95,77 @@ void ASCharacter::MoveRight(float value)
 	AddMovementInput(RightVector, value);
 }
 
+void ASCharacter::OnHealthChanged(AActor* InstigatorActor, USAttributeComponent* OwningComp, float NewHealth, float Delta)
+{
+	if (Delta < 0.0f)
+	{
+		FVector4 CurrentColor = MID->K2_GetVectorParameterValue("ColorBottom");
+		MID->SetScalarParameterValue(TimeToHitParamName, 1.f);
+		// GetMesh()->SetScalarParameterValueOnMaterials("TimeToHit", 1.f);
+		// MID->SetVectorParameterValue("ColorBottom",  CurrentColor + FVector4(0.2f, 0.2f,0.2f, 0.3f));
+		GetMesh()->SetVectorParameterValueOnMaterials("ColorBottom",  CurrentColor + FVector4(0.2f, 0.2f,0.2f, 0.3f));
+		
+	}
+	if (NewHealth <= 0.f && Delta < 0.f)
+	{
+		APlayerController* PC = Cast<APlayerController>(GetWorld()->GetFirstPlayerController());
+ 		DisableInput(PC);
+		SetLifeSpan(5.0f);
+	}
+}
+
+void ASCharacter::PrimaryAttack()
+{
+	StartAttackEffects();
+	GetWorldTimerManager().SetTimer(TimerHandle_PrimaryAttack, this, &ASCharacter::PrimaryAttack_TimeElapsed, AttackAnimDelay);
+}
+
+void ASCharacter::BlackHoleAttack()
+{
+	StartAttackEffects();
+	GetWorldTimerManager().SetTimer(TimerHandle_BlackHoleAttack, this, &ASCharacter::BlackHoleAttack_TimeElapsed, AttackAnimDelay);
+}
+
+void ASCharacter::Dash()
+{
+	StartAttackEffects();
+	GetWorldTimerManager().SetTimer(TimerHandle_Dash, this, &ASCharacter::Dash_TimeElapsed, AttackAnimDelay);
+}
+
+void ASCharacter::StartAttackEffects()
+{
+	if (GetNetMode() != NM_DedicatedServer)
+	{
+		PlayAnimMontage(AttackAnim);
+		UGameplayStatics::SpawnEmitterAttached(CastingEffect, GetMesh(), HandSocketName, FVector::ZeroVector, FRotator::ZeroRotator,EAttachLocation::SnapToTarget);
+	}
+}
+
+void ASCharacter::PrimaryInteract()
+{
+	if (InteractionComponent) InteractionComponent->PrimaryInteract();
+}
+
+void ASCharacter::PrimaryAttack_TimeElapsed()
+{
+	SpawnProjectile(ProjectileClass);
+}
+
+void ASCharacter::BlackHoleAttack_TimeElapsed()
+{
+	SpawnProjectile(BlackHoleProjectileClass);
+}
+
+void ASCharacter::Dash_TimeElapsed()
+{
+	SpawnProjectile(DashProjectileClass);
+}
+
 void ASCharacter::SpawnProjectile(TSubclassOf<AActor> ClassTosSpawn)
 {
 	if (ensureAlways(ClassTosSpawn))
 	{
-		FVector HandLocation = GetMesh()->GetSocketLocation("Muzzle_01");
+		FVector HandLocation = GetMesh()->GetSocketLocation(HandSocketName);
 
 		FActorSpawnParameters SpawnParams;
 		SpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
@@ -131,62 +202,4 @@ void ASCharacter::SpawnProjectile(TSubclassOf<AActor> ClassTosSpawn)
 		FTransform SpawnTM = FTransform(ProjRotation, HandLocation);
 		GetWorld()->SpawnActor<AActor>(ClassTosSpawn, SpawnTM, SpawnParams);
 	}
-}
-
-void ASCharacter::OnHealthChanged(AActor* InstigatorActor, USAttributeComponent* OwningComp, float NewHealth, float Delta)
-{
-	if (GetMesh())
-	{
-		FVector4 CurrentColor = MID->K2_GetVectorParameterValue("ColorBottom");
-		MID->SetScalarParameterValue("TimeToHit", 1.f);
-		// GetMesh()->SetScalarParameterValueOnMaterials("TimeToHit", 1.f);
-		// MID->SetVectorParameterValue("ColorBottom",  CurrentColor + FVector4(0.2f, 0.2f,0.2f, 0.3f));
-		GetMesh()->SetVectorParameterValueOnMaterials("ColorBottom",  CurrentColor + FVector4(0.2f, 0.2f,0.2f, 0.3f));
-	}
-	if (NewHealth <= 0.f && Delta < 0.f)
-	{
-		APlayerController* PC = Cast<APlayerController>(GetWorld()->GetFirstPlayerController());
- 		DisableInput(PC);
-	}
-}
-
-
-void ASCharacter::PrimaryAttack()
-{
-	PlayAnimMontage(AttackAnim);
-	float TimerRate = 0.18f;
-	GetWorldTimerManager().SetTimer(TimerHandle_PrimaryAttack, this, &ASCharacter::PrimaryAttack_TimeElapsed, TimerRate);
-}
-
-void ASCharacter::BlackHoleAttack()
-{
-	PlayAnimMontage(AttackAnim);
-
-	GetWorldTimerManager().SetTimer(TimerHandle_BlackHoleAttack, this, &ASCharacter::BlackHoleAttack_TimeElapsed, AttackAnimDelay);
-}
-
-void ASCharacter::Dash()
-{
-	PlayAnimMontage(AttackAnim);
-	GetWorldTimerManager().SetTimer(TimerHandle_Dash, this, &ASCharacter::Dash_TimeElapsed, AttackAnimDelay);
-}
-
-void ASCharacter::PrimaryInteract()
-{
-	if (InteractionComponent) InteractionComponent->PrimaryInteract();
-}
-
-void ASCharacter::PrimaryAttack_TimeElapsed()
-{
-	SpawnProjectile(ProjectileClass);
-}
-
-void ASCharacter::BlackHoleAttack_TimeElapsed()
-{
-	SpawnProjectile(BlackHoleProjectileClass);
-}
-
-void ASCharacter::Dash_TimeElapsed()
-{
-	SpawnProjectile(DashProjectileClass);
 }

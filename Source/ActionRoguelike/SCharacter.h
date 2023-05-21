@@ -21,6 +21,13 @@ class ACTIONROGUELIKE_API ASCharacter : public ACharacter
 	GENERATED_BODY()
 
 protected:
+
+	UPROPERTY(VisibleAnywhere, Category="Effects")
+	FName TimeToHitParamName;
+
+	UPROPERTY(VisibleAnywhere, Category="Effect")
+	FName HandSocketName;
+	
 	UPROPERTY(EditAnywhere, Category="Attack")
 	TSubclassOf<AActor> ProjectileClass;
 
@@ -32,13 +39,17 @@ protected:
 
 	UPROPERTY(EditAnywhere, Category="Attack")
 	UAnimMontage* AttackAnim;
-	
-	UPROPERTY(EditAnywhere, Category="Attack")
-	float AttackAnimDelay;
 
+	UPROPERTY(EditAnywhere, Category="Attack")
+	UParticleSystem* CastingEffect;
+	
 	FTimerHandle TimerHandle_PrimaryAttack;
 	FTimerHandle TimerHandle_BlackHoleAttack;
 	FTimerHandle TimerHandle_Dash;
+
+	UPROPERTY(EditAnywhere, Category="Attack")
+	float AttackAnimDelay;
+	
 public:
 	// Sets default values for this character's properties
 	ASCharacter();
@@ -80,9 +91,11 @@ protected:
 	void Dash_TimeElapsed();
 	
 	void SpawnProjectile(TSubclassOf<AActor> ClassTosSpawn);
+	
+	void StartAttackEffects();
 		
 	UFUNCTION()
-	void OnHealthChanged(AActor* InstigatorActor, USAttributeComponent* OwningComp, float NewHealth, float Delta);
+	virtual void OnHealthChanged(AActor* InstigatorActor, USAttributeComponent* OwningComp, float NewHealth, float Delta);
 
 	virtual void PostInitializeComponents() override; // a bit better way to bind events, vs constructor
 	
