@@ -95,7 +95,7 @@ protected:
 	void StartAttackEffects();
 		
 	UFUNCTION()
-	virtual void OnHealthChanged(AActor* InstigatorActor, USAttributeComponent* OwningComp, float NewHealth, float Delta);
+	void OnHealthChanged(AActor* InstigatorActor, USAttributeComponent* OwningComp, float NewHealth, float Delta);
 
 	virtual void PostInitializeComponents() override; // a bit better way to bind events, vs constructor
 	

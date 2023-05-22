@@ -7,10 +7,11 @@
 #include "SAICharacter.generated.h"
 
 class UPawnSensingComponent;
+class USAttributeComponent;
+
 /* Pawn Sensing VS AI Perception:
  * To give sense of sight and hearing to AI
  * PawnSensing is easier to use, more capable
- *
  */
 
 UCLASS()
@@ -24,10 +25,21 @@ public:
 
 protected:
 
+	UPROPERTY(VisibleAnywhere, Category="Effects")
+	FName TimeToHitParamName;
+	
+	void SetTargetActor(AActor* NewTarget);
+	
+	UFUNCTION()
+	void OnHealthChanged(AActor* InstigatorActor, USAttributeComponent* OwningComp, float NewHealth, float Delta);
+	
 	virtual void PostInitializeComponents() override;
 	
 	UPROPERTY(VisibleAnywhere, Category="Components")
 	UPawnSensingComponent* PawnSensingComp;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
+	USAttributeComponent* AttributeComp;
 
 	UFUNCTION()
 	void OnPawnSeen(APawn* Pawn);

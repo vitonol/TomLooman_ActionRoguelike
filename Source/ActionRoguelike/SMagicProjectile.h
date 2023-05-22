@@ -55,9 +55,4 @@ protected:
 	
 	UPROPERTY(EditAnywhere)
 	float Damage;
-
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
-
 };

@@ -4,8 +4,14 @@
 #include "SBTTask_RangedAttack.h"
 
 #include "AIController.h"
+#include "ActionRoguelike/SAttributeComponent.h"
 #include "BehaviorTree/BlackboardComponent.h"
 #include "GameFramework/Character.h"
+
+USBTTask_RangedAttack::USBTTask_RangedAttack()
+{
+	MaxBulletsSpread = 2.f;
+}
 
 EBTNodeResult::Type USBTTask_RangedAttack::ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory)
 	// Spawn A pojectile in the direcftion of the character
@@ -22,11 +28,17 @@ EBTNodeResult::Type USBTTask_RangedAttack::ExecuteTask(UBehaviorTreeComponent& O
 		AActor* TargetActor = Cast<AActor>(OwnerComp.GetBlackboardComponent()->GetValueAsObject("TargetActor"));
 		if (TargetActor == nullptr) return EBTNodeResult::Failed;
 
+		if (!USAttributeComponent::IsActorAlive(TargetActor)) return EBTNodeResult::Failed;
+
 		FVector Direction = TargetActor->GetActorLocation() - MuzzleLocation; // direction pointing towards the target actor
 		FRotator MuzzleRotation = Direction.Rotation();
 
+		MuzzleRotation.Pitch += FMath::RandRange(0.f, MaxBulletsSpread);
+		MuzzleRotation.Yaw += FMath::RandRange(-MaxBulletsSpread+0.4f, MaxBulletsSpread-0.5f);
+
 		FActorSpawnParameters Params;
 		Params.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
+		Params.Instigator = MyPawn;
 
 		AActor* NewProj = GetWorld()->SpawnActor<AActor>(ProjectileClass, MuzzleLocation, MuzzleRotation, Params);
 
@@ -35,3 +47,4 @@ EBTNodeResult::Type USBTTask_RangedAttack::ExecuteTask(UBehaviorTreeComponent& O
 
 	return EBTNodeResult::Failed;
 }
+

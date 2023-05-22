@@ -3,6 +3,7 @@
 
 #include "SProjectileBase.h"
 
+#include "Components/AudioComponent.h"
 #include "Components/SphereComponent.h"
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "Kismet/GameplayStatics.h"
@@ -18,6 +19,9 @@ ASProjectileBase::ASProjectileBase()
 
 	EffectComp = CreateDefaultSubobject<UParticleSystemComponent>("EffectComp");
 	EffectComp->SetupAttachment(RootComponent);
+
+	// AudioComp = CreateDefaultSubobject<UAudioComponent>("EffectComp");
+	// AudioComp->SetupAttachment(RootComponent);
 
 	MoveComp = CreateDefaultSubobject<UProjectileMovementComponent>("ProjectileMoveComp");
 	MoveComp->bRotationFollowsVelocity = true;

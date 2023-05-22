@@ -2,11 +2,12 @@
 
 
 #include "SCharacter.h"
+#include "SInteractionComponent.h"
+#include "SAttributeComponent.h"
+
 #include "GameFramework/SpringArmComponent.h"
 #include "Camera/CameraComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
-#include "SInteractionComponent.h"
-#include "SAttributeComponent.h"
 #include "Kismet/GameplayStatics.h"
 
 // Sets default values
@@ -100,10 +101,9 @@ void ASCharacter::OnHealthChanged(AActor* InstigatorActor, USAttributeComponent*
 	if (Delta < 0.0f)
 	{
 		FVector4 CurrentColor = MID->K2_GetVectorParameterValue("ColorBottom");
-		MID->SetScalarParameterValue(TimeToHitParamName, 1.f);
-		// GetMesh()->SetScalarParameterValueOnMaterials("TimeToHit", 1.f);
-		// MID->SetVectorParameterValue("ColorBottom",  CurrentColor + FVector4(0.2f, 0.2f,0.2f, 0.3f));
-		GetMesh()->SetVectorParameterValueOnMaterials("ColorBottom",  CurrentColor + FVector4(0.2f, 0.2f,0.2f, 0.3f));
+		// MID->SetScalarParameterValue(TimeToHitParamName, GetWorld()->TimeSeconds);
+		GetMesh()->SetScalarParameterValueOnMaterials(TimeToHitParamName, GetWorld()->TimeSeconds);
+		// GetMesh()->SetVectorParameterValueOnMaterials("ColorBottom",  CurrentColor + FVector4(0.2f, 0.2f,0.2f, 0.3f));
 		
 	}
 	if (NewHealth <= 0.f && Delta < 0.f)
