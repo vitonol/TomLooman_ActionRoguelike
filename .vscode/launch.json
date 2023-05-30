@@ -1,0 +1,152 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Launch ActionRoguelike (Debug)",
+			"request": "launch",
+			"program": "S:\\Unreal Projects\\ActionRoguelike\\Binaries\\Win64\\UnrealGame-Win64-Debug.exe",
+			"preLaunchTask": "ActionRoguelike Win64 Debug Build",
+			"args": [
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_5.2",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\\build\\++UE5\\Sync": "C:\\Program Files\\Epic Games\\UE_5.2"
+			}
+		},
+		{
+			"name": "Launch ActionRoguelike (DebugGame)",
+			"request": "launch",
+			"program": "S:\\Unreal Projects\\ActionRoguelike\\Binaries\\Win64\\UnrealGame-Win64-DebugGame.exe",
+			"preLaunchTask": "ActionRoguelike Win64 DebugGame Build",
+			"args": [
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_5.2",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\\build\\++UE5\\Sync": "C:\\Program Files\\Epic Games\\UE_5.2"
+			}
+		},
+		{
+			"name": "Launch ActionRoguelike (Development)",
+			"request": "launch",
+			"program": "S:\\Unreal Projects\\ActionRoguelike\\Binaries\\Win64\\UnrealGame.exe",
+			"preLaunchTask": "ActionRoguelike Win64 Development Build",
+			"args": [
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_5.2",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\\build\\++UE5\\Sync": "C:\\Program Files\\Epic Games\\UE_5.2"
+			}
+		},
+		{
+			"name": "Launch ActionRoguelike (Test)",
+			"request": "launch",
+			"program": "S:\\Unreal Projects\\ActionRoguelike\\Binaries\\Win64\\UnrealGame-Win64-Test.exe",
+			"preLaunchTask": "ActionRoguelike Win64 Test Build",
+			"args": [
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_5.2",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\\build\\++UE5\\Sync": "C:\\Program Files\\Epic Games\\UE_5.2"
+			}
+		},
+		{
+			"name": "Launch ActionRoguelike (Shipping)",
+			"request": "launch",
+			"program": "S:\\Unreal Projects\\ActionRoguelike\\Binaries\\Win64\\UnrealGame-Win64-Shipping.exe",
+			"preLaunchTask": "ActionRoguelike Win64 Shipping Build",
+			"args": [
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_5.2",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\\build\\++UE5\\Sync": "C:\\Program Files\\Epic Games\\UE_5.2"
+			}
+		},
+		{
+			"name": "Launch ActionRoguelikeEditor (Debug)",
+			"request": "launch",
+			"program": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-Debug.exe",
+			"preLaunchTask": "ActionRoguelikeEditor Win64 Debug Build",
+			"args": [
+				"S:\\Unreal Projects\\ActionRoguelike\\ActionRoguelike.uproject"
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_5.2",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\\build\\++UE5\\Sync": "C:\\Program Files\\Epic Games\\UE_5.2"
+			}
+		},
+		{
+			"name": "Launch ActionRoguelikeEditor (DebugGame)",
+			"request": "launch",
+			"program": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-DebugGame.exe",
+			"preLaunchTask": "ActionRoguelikeEditor Win64 DebugGame Build",
+			"args": [
+				"S:\\Unreal Projects\\ActionRoguelike\\ActionRoguelike.uproject"
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_5.2",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\\build\\++UE5\\Sync": "C:\\Program Files\\Epic Games\\UE_5.2"
+			}
+		},
+		{
+			"name": "Launch ActionRoguelikeEditor (Development)",
+			"request": "launch",
+			"program": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+			"preLaunchTask": "ActionRoguelikeEditor Win64 Development Build",
+			"args": [
+				"S:\\Unreal Projects\\ActionRoguelike\\ActionRoguelike.uproject"
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_5.2",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\\build\\++UE5\\Sync": "C:\\Program Files\\Epic Games\\UE_5.2"
+			}
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "coreclr",
+			"request": "launch",
+			"program": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Build\\BatchFiles\\RunUBT.bat",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=S:\\Unreal Projects\\ActionRoguelike\\ActionRoguelike.uproject",
+				"-game",
+				"-engine"
+			],
+			"console": "externalTerminal",
+			"stopAtEntry": false,
+			"cwd": "C:\\Program Files\\Epic Games\\UE_5.2"
+		}
+	]
+}

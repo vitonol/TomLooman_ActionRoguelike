@@ -5,6 +5,8 @@
 
 #include "SAttributeComponent.h"
 #include "AI/SAICharacter.h"
+#include "SCharacter.h"
+
 #include "EnvironmentQuery/EnvQueryManager.h"
 #include "EnvironmentQuery/EnvQueryTypes.h"
 #include "EnvironmentQuery/EnvQueryInstanceBlueprintWrapper.h"
@@ -69,4 +71,46 @@ void ASGameModeBase::OnQueryCompleted(UEnvQueryInstanceBlueprintWrapper* QueryIn
 		GetWorld()->SpawnActor<AActor>(MinionClass, Locations[0],FRotator::ZeroRotator);
 		DrawDebugSphere(GetWorld(), Locations[0], 50.f, 20, FColor::Purple, false, 60.f);
 	}
+}
+
+void ASGameModeBase::KillAll()
+{
+	for (TActorIterator<ASAICharacter> It(GetWorld()); It; ++It) // beter version of GetActorsOfClass, only returns instances of that class
+	{
+		ASAICharacter* Bot = *It;
+		USAttributeComponent* AttributeComp = USAttributeComponent::GetAttributes(Bot); // uses static funncftion
+		{
+			if (ensure(AttributeComp) && AttributeComp->IsAlive())
+			{
+				AttributeComp->Kill(this); //@TODO pass in player for kill credits? 
+			}
+		}
+	}
+}
+
+void ASGameModeBase::RespawnPlayerElapsed(AController* Controller)
+{
+	if (ensure(Controller))
+	{
+		Controller->UnPossess(); // to make sure we have a fresh copy of  a character
+
+		RestartPlayer(Controller);
+	}
+}
+
+void ASGameModeBase::OnActorKilled(AActor* VictimActor, AActor* Killer)
+{
+	ASCharacter* Player = Cast<ASCharacter>(VictimActor);
+	if (Player)
+	{
+		FTimerHandle TH_RespawnDelay;
+		
+		FTimerDelegate Delegate;
+		Delegate.BindUFunction(this, "RespawnPlayerElapsed", Player->GetController());
+
+		float RespawnDelay = 2.f;
+		GetWorldTimerManager().SetTimer(TH_RespawnDelay, Delegate, RespawnDelay, false);
+	}
+
+	UE_LOG(LogTemp, Log, TEXT("OnActorKilled: Victim: %s, Killer: %s"), *GetNameSafe(VictimActor), *GetNameSafe(Killer));
 }

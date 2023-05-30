@@ -19,6 +19,9 @@ UCLASS() //property system
 class ACTIONROGUELIKE_API ASCharacter : public ACharacter
 {
 	GENERATED_BODY()
+public:
+	// Sets default values for this character's properties
+	ASCharacter();
 
 protected:
 
@@ -50,10 +53,6 @@ protected:
 	UPROPERTY(EditAnywhere, Category="Attack")
 	float AttackAnimDelay;
 	
-public:
-	// Sets default values for this character's properties
-	ASCharacter();
-
 protected:
 	UMaterialInstanceDynamic* MID;
 
@@ -102,6 +101,9 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
+	UFUNCTION(Exec)    // only will work on the PC, PC, GameMode or CheatManager
+	void HealSelf(float Amount = 100);
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;

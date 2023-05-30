@@ -1,0 +1,3226 @@
+[
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\RD.Build.cs",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\RD.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\RD.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_core_cpp\\rd_core_export.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_core_cpp\\src\\main\\lifetime\\Lifetime.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_core_cpp\\src\\main\\lifetime\\Lifetime.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_core_cpp\\src\\main\\lifetime\\LifetimeDefinition.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_core_cpp\\src\\main\\lifetime\\LifetimeDefinition.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_core_cpp\\src\\main\\lifetime\\LifetimeImpl.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_core_cpp\\src\\main\\lifetime\\LifetimeImpl.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_core_cpp\\src\\main\\lifetime\\SequentialLifetimes.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_core_cpp\\src\\main\\lifetime\\SequentialLifetimes.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_core_cpp\\src\\main\\reactive\\Property.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_core_cpp\\src\\main\\reactive\\ViewableList.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_core_cpp\\src\\main\\reactive\\ViewableMap.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_core_cpp\\src\\main\\reactive\\ViewableSet.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_core_cpp\\src\\main\\reactive\\base\\IProperty.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_core_cpp\\src\\main\\reactive\\base\\IPropertyBase.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_core_cpp\\src\\main\\reactive\\base\\IViewableList.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_core_cpp\\src\\main\\reactive\\base\\IViewableMap.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_core_cpp\\src\\main\\reactive\\base\\IViewableSet.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_core_cpp\\src\\main\\reactive\\base\\SignalCookie.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_core_cpp\\src\\main\\reactive\\base\\SignalCookie.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_core_cpp\\src\\main\\reactive\\base\\SignalX.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_core_cpp\\src\\main\\reactive\\base\\interfaces.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_core_cpp\\src\\main\\reactive\\base\\viewable_collections.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_core_cpp\\src\\main\\std\\allocator.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_core_cpp\\src\\main\\std\\hash.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_core_cpp\\src\\main\\std\\list.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_core_cpp\\src\\main\\std\\to_string.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_core_cpp\\src\\main\\std\\unordered_map.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_core_cpp\\src\\main\\std\\unordered_set.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_core_cpp\\src\\main\\types\\DateTime.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_core_cpp\\src\\main\\types\\DateTime.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_core_cpp\\src\\main\\types\\Void.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_core_cpp\\src\\main\\types\\wrapper.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_core_cpp\\src\\main\\util\\core_traits.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_core_cpp\\src\\main\\util\\core_util.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_core_cpp\\src\\main\\util\\enum.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_core_cpp\\src\\main\\util\\erase_if.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_core_cpp\\src\\main\\util\\gen_util.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_core_cpp\\src\\main\\util\\overloaded.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_core_cpp\\src\\main\\util\\shared_function.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\rd_framework_export.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\base\\IProtocol.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\base\\IProtocol.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\base\\IRdBindable.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\base\\IRdDynamic.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\base\\IRdReactive.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\base\\IRdWireable.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\base\\IRdWireable.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\base\\ISerializersOwner.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\base\\ISerializersOwner.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\base\\IUnknownInstance.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\base\\IUnknownInstance.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\base\\IWire.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\base\\RdBindableBase.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\base\\RdBindableBase.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\base\\RdPropertyBase.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\base\\RdReactiveBase.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\base\\RdReactiveBase.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\base\\WireBase.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\base\\WireBase.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\ext\\ExtWire.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\ext\\ExtWire.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\ext\\RdExtBase.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\ext\\RdExtBase.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\impl\\RName.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\impl\\RName.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\impl\\RdList.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\impl\\RdMap.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\impl\\RdProperty.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\impl\\RdSet.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\impl\\RdSignal.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\intern\\InternRoot.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\intern\\InternRoot.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\intern\\InternScheduler.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\intern\\InternScheduler.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\protocol\\Buffer.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\protocol\\Buffer.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\protocol\\Identities.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\protocol\\Identities.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\protocol\\MessageBroker.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\protocol\\MessageBroker.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\protocol\\Protocol.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\protocol\\Protocol.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\protocol\\RdId.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\protocol\\RdId.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\scheduler\\SimpleScheduler.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\scheduler\\SimpleScheduler.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\scheduler\\SingleThreadScheduler.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\scheduler\\SingleThreadScheduler.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\scheduler\\SynchronousScheduler.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\scheduler\\SynchronousScheduler.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\scheduler\\base\\IScheduler.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\scheduler\\base\\IScheduler.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\scheduler\\base\\SingleThreadSchedulerBase.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\scheduler\\base\\SingleThreadSchedulerBase.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\serialization\\AbstractPolymorphic.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\serialization\\ArraySerializer.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\serialization\\DefaultAbstractDeclaration.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\serialization\\DefaultAbstractDeclaration.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\serialization\\ISerializable.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\serialization\\ISerializable.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\serialization\\InternedAnySerializer.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\serialization\\InternedSerializer.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\serialization\\NullableSerializer.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\serialization\\Polymorphic.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\serialization\\Polymorphic.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\serialization\\RdAny.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\serialization\\RdAny.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\serialization\\SerializationCtx.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\serialization\\SerializationCtx.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\serialization\\Serializers.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\serialization\\Serializers.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\task\\RdCall.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\task\\RdEndpoint.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\task\\RdSymmetricCall.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\task\\RdTask.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\task\\RdTaskImpl.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\task\\RdTaskResult.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\task\\WiredRdTask.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\task\\WiredRdTaskImpl.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\util\\framework_traits.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\util\\guards.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\util\\hashing.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\util\\hashing.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\util\\thread_util.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\util\\thread_util.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\wire\\ByteBufferAsyncProcessor.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\wire\\ByteBufferAsyncProcessor.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\wire\\PkgInputStream.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\wire\\PkgInputStream.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\wire\\PumpScheduler.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\wire\\PumpScheduler.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\wire\\SocketWire.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\wire\\SocketWire.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\wire\\WireUtil.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_framework_cpp\\src\\main\\wire\\WireUtil.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_gen_cpp\\src\\RdTextBuffer.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\src\\rd_gen_cpp\\src\\RdTextBuffer.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\CTPL\\LICENSE",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\CTPL\\README.md",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\CTPL\\include\\ctpl_stl.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\clsocket\\README",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\clsocket\\src\\ActiveSocket.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\clsocket\\src\\ActiveSocket.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\clsocket\\src\\Host.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\clsocket\\src\\PassiveSocket.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\clsocket\\src\\PassiveSocket.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\clsocket\\src\\SimpleSocket.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\clsocket\\src\\SimpleSocket.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\clsocket\\src\\StatTimer.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\countdownlatch\\LICENSE",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\countdownlatch\\README.md",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\countdownlatch\\countdownlatch.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\countdownlatch\\countdownlatch.hpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\optional\\COPYING",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\optional\\README.md",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\optional\\tl\\optional.hpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\ordered-map\\LICENSE",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\ordered-map\\README.md",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\ordered-map\\include\\tsl\\ordered_hash.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\ordered-map\\include\\tsl\\ordered_map.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\ordered-map\\include\\tsl\\ordered_set.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\LICENSE",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\README.md",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\cmake\\ide.cmake",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\cmake\\pch.h.in",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\cmake\\spdlog.pc.in",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\cmake\\spdlogCPack.cmake",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\cmake\\spdlogConfig.cmake.in",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\cmake\\utils.cmake",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\cmake\\version.rc.in",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\async.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\async_logger-inl.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\async_logger.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\cfg\\argv.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\cfg\\env.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\cfg\\helpers-inl.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\cfg\\helpers.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\cfg\\log_levels.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\common-inl.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\common.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\details\\backtracer-inl.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\details\\backtracer.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\details\\circular_q.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\details\\console_globals.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\details\\file_helper-inl.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\details\\file_helper.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\details\\fmt_helper.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\details\\log_msg-inl.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\details\\log_msg.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\details\\log_msg_buffer-inl.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\details\\log_msg_buffer.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\details\\mpmc_blocking_q.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\details\\null_mutex.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\details\\os-inl.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\details\\os.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\details\\periodic_worker-inl.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\details\\periodic_worker.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\details\\registry-inl.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\details\\registry.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\details\\synchronous_factory.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\details\\tcp_client-windows.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\details\\tcp_client.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\details\\thread_pool-inl.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\details\\thread_pool.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\details\\windows_include.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\fmt\\bin_to_hex.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\fmt\\bundled\\LICENSE.rst",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\fmt\\bundled\\chrono.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\fmt\\bundled\\color.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\fmt\\bundled\\compile.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\fmt\\bundled\\core.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\fmt\\bundled\\format-inl.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\fmt\\bundled\\format.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\fmt\\bundled\\locale.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\fmt\\bundled\\ostream.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\fmt\\bundled\\posix.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\fmt\\bundled\\printf.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\fmt\\bundled\\ranges.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\fmt\\fmt.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\fmt\\ostr.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\formatter.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\fwd.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\logger-inl.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\logger.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\pattern_formatter-inl.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\pattern_formatter.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\sinks\\android_sink.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\sinks\\ansicolor_sink-inl.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\sinks\\ansicolor_sink.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\sinks\\base_sink-inl.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\sinks\\base_sink.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\sinks\\basic_file_sink-inl.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\sinks\\basic_file_sink.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\sinks\\daily_file_sink.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\sinks\\dist_sink.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\sinks\\dup_filter_sink.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\sinks\\msvc_sink.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\sinks\\null_sink.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\sinks\\ostream_sink.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\sinks\\ringbuffer_sink.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\sinks\\rotating_file_sink-inl.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\sinks\\rotating_file_sink.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\sinks\\sink-inl.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\sinks\\sink.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\sinks\\stdout_color_sinks-inl.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\sinks\\stdout_color_sinks.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\sinks\\stdout_sinks-inl.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\sinks\\stdout_sinks.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\sinks\\syslog_sink.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\sinks\\systemd_sink.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\sinks\\tcp_sink.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\sinks\\win_eventlog_sink.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\sinks\\wincolor_sink-inl.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\sinks\\wincolor_sink.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\spdlog-inl.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\spdlog.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\tweakme.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\include\\spdlog\\version.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\logos\\jetbrains-variant-4.svg",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\scripts\\extract_version.py",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\scripts\\format.sh",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\src\\async.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\src\\cfg.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\src\\color_sinks.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\src\\file_sinks.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\src\\fmt.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\src\\spdlog.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\spdlog\\src\\stdout_sinks.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\string-view-lite\\LICENSE.txt",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\string-view-lite\\README.md",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\string-view-lite\\cmake\\string_view-lite-config.cmake.in",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\string-view-lite\\include\\nonstd\\string_view.hpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\thirdparty.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\thirdparty.hpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\variant\\CMakeLists.txt",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\variant\\LICENSE.md",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\variant\\README.md",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\variant\\cmake\\mpark_variant-config.cmake.in",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\variant\\include\\mpark\\config.hpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\variant\\include\\mpark\\in_place.hpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\variant\\include\\mpark\\lib.hpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RD\\thirdparty\\variant\\include\\mpark\\variant.hpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RD.22.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderBlueprint\\Private\\BlueprintProvider.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderBlueprint.25.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderBlueprint\\Private\\RiderBlueprint.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderBlueprint.25.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderBlueprint\\Public\\BlueprintProvider.hpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderBlueprint.25.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderBlueprint\\Public\\RiderBlueprint.hpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderBlueprint.25.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderBlueprint\\RiderBlueprint.Build.cs",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderBlueprint.25.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderGameControl\\Private\\RiderGameControl.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderGameControl.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderGameControl\\Public\\RiderGameControl.hpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderGameControl.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderGameControl\\RiderGameControl.Build.cs",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderGameControl.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Private\\ProtocolFactory.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Private\\ProtocolFactory.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Private\\RiderLink.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Private\\RiderLink.hpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Private\\UE4TypesMarshallers.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\IRiderLink.hpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\CMakeLists.txt",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\BlueprintFunction.Generated.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\BlueprintFunction.Generated.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\BlueprintHighlighter.Generated.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\BlueprintHighlighter.Generated.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\BlueprintReference.Generated.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\BlueprintReference.Generated.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\EmptyScriptCallStack.Generated.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\EmptyScriptCallStack.Generated.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\IScriptCallStack.Generated.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\IScriptCallStack.Generated.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\IScriptCallStack_Unknown.Generated.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\IScriptCallStack_Unknown.Generated.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\IScriptMsg.Generated.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\IScriptMsg.Generated.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\IScriptMsg_Unknown.Generated.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\IScriptMsg_Unknown.Generated.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\LogMessageInfo.Generated.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\LogMessageInfo.Generated.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\NotificationType.Generated.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\NotificationType.Generated.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\PlayState.Generated.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\PlayState.Generated.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\RequestFailed.Generated.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\RequestFailed.Generated.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\RequestResultBase.Generated.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\RequestResultBase.Generated.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\RequestResultBase_Unknown.Generated.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\RequestResultBase_Unknown.Generated.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\RequestSucceed.Generated.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\RequestSucceed.Generated.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\ScriptCallStack.Generated.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\ScriptCallStack.Generated.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\ScriptCallStackFrame.Generated.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\ScriptCallStackFrame.Generated.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\ScriptMsgCallStack.Generated.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\ScriptMsgCallStack.Generated.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\ScriptMsgException.Generated.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\ScriptMsgException.Generated.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\StringRange.Generated.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\StringRange.Generated.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\UClass.Generated.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\UClass.Generated.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\UE4Library.Generated.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\UE4Library.Generated.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\UnableToDisplayScriptCallStack.Generated.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\UnableToDisplayScriptCallStack.Generated.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\UnrealLogEvent.Generated.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\UE4Library\\UnrealLogEvent.Generated.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\instantiations_UE4Library.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\Library\\instantiations_UE4Library.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\RdEditorProtocol\\CMakeLists.txt",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\RdEditorProtocol\\RdEditorModel\\RdEditorModel.Generated.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\RdEditorProtocol\\RdEditorModel\\RdEditorModel.Generated.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\RdEditorProtocol\\RdEditorRoot\\RdEditorRoot.Generated.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\RdEditorProtocol\\RdEditorRoot\\RdEditorRoot.Generated.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\RdEditorProtocol\\instantiations_RdEditorRoot.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\Model\\RdEditorProtocol\\instantiations_RdEditorRoot.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\Public\\UE4TypesMarshallers.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\RiderLink.Build.cs",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLink.23.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLogging\\Private\\RiderLogging.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLogging.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLogging\\Private\\RiderLogging.hpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLogging.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLogging\\Private\\RiderOutputDevice.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLogging.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLogging\\Private\\RiderOutputDevice.hpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLogging.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderLogging\\RiderLogging.Build.cs",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderLogging.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderShaderInfoDump\\RiderShaderInfoDump.Build.cs",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderShaderInfoDump.27.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderShaderInfoDump\\RiderShaderInfoDump.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderShaderInfoDump.27.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Plugins\\Developer\\RiderLink\\Source\\RiderShaderInfoDump\\RiderShaderInfoDump.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\RiderShaderInfoDump.27.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Source\\ActionRoguelike\\AI\\SAICharacter.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\ActionRoguelike.267.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Source\\ActionRoguelike\\AI\\SAICharacter.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\ActionRoguelike.267.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Source\\ActionRoguelike\\AI\\SAIController.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\ActionRoguelike.267.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Source\\ActionRoguelike\\AI\\SAIController.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\ActionRoguelike.267.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Source\\ActionRoguelike\\AI\\SBTService_CheckAttackRange.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\ActionRoguelike.267.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Source\\ActionRoguelike\\AI\\SBTService_CheckAttackRange.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\ActionRoguelike.267.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Source\\ActionRoguelike\\AI\\SBTTask_RangedAttack.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\ActionRoguelike.267.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Source\\ActionRoguelike\\AI\\SBTTask_RangedAttack.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\ActionRoguelike.267.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Source\\ActionRoguelike\\ActionRoguelike.Build.cs",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\ActionRoguelike.267.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Source\\ActionRoguelike\\ActionRoguelike.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\ActionRoguelike.267.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Source\\ActionRoguelike\\ActionRoguelike.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\ActionRoguelike.267.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Source\\ActionRoguelike\\SAttributeComponent.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\ActionRoguelike.267.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Source\\ActionRoguelike\\SAttributeComponent.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\ActionRoguelike.267.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Source\\ActionRoguelike\\SCharacter.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\ActionRoguelike.267.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Source\\ActionRoguelike\\SCharacter.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\ActionRoguelike.267.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Source\\ActionRoguelike\\SDashProjectile.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\ActionRoguelike.267.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Source\\ActionRoguelike\\SDashProjectile.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\ActionRoguelike.267.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Source\\ActionRoguelike\\SExplosiveBarrel.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\ActionRoguelike.267.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Source\\ActionRoguelike\\SExplosiveBarrel.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\ActionRoguelike.267.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Source\\ActionRoguelike\\SGameModeBase.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\ActionRoguelike.267.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Source\\ActionRoguelike\\SGameModeBase.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\ActionRoguelike.267.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Source\\ActionRoguelike\\SInteractibleInterface.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\ActionRoguelike.267.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Source\\ActionRoguelike\\SInteractibleInterface.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\ActionRoguelike.267.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Source\\ActionRoguelike\\SInteractionComponent.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\ActionRoguelike.267.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Source\\ActionRoguelike\\SInteractionComponent.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\ActionRoguelike.267.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Source\\ActionRoguelike\\SItemChest.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\ActionRoguelike.267.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Source\\ActionRoguelike\\SItemChest.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\ActionRoguelike.267.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Source\\ActionRoguelike\\SMagicProjectile.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\ActionRoguelike.267.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Source\\ActionRoguelike\\SMagicProjectile.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\ActionRoguelike.267.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Source\\ActionRoguelike\\SProjectileBase.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\ActionRoguelike.267.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Source\\ActionRoguelike\\SProjectileBase.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\ActionRoguelike.267.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Source\\ActionRoguelike\\STargetDummy.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\ActionRoguelike.267.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Source\\ActionRoguelike\\STargetDummy.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\ActionRoguelike.267.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Source\\ActionRoguelike\\SWorldUserWidget.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\ActionRoguelike.267.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "S:\\Unreal Projects\\ActionRoguelike\\Source\\ActionRoguelike\\SWorldUserWidget.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\cl.exe",
+			"@S:\\Unreal Projects\\ActionRoguelike\\.vscode\\compileCommands_ActionRoguelike\\ActionRoguelike.267.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	}
+]

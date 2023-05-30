@@ -38,6 +38,9 @@ protected:
 	
 public:
 
+	UFUNCTION(Exec)
+	bool Kill(AActor* Instigator);
+
 	UFUNCTION(BlueprintCallable)
 	bool IsAlive() const;
 	
@@ -46,4 +49,10 @@ public:
 	
 	UFUNCTION(BlueprintCallable, Category = "Attributes")
 	bool ApplyHealthChange(AActor* InstigatorActor, float Delta);
+
+	UFUNCTION(BlueprintCallable)
+	float GetHealthMax() const;
+
+	UFUNCTION(BlueprintCallable)
+	float GetHealth();
 };

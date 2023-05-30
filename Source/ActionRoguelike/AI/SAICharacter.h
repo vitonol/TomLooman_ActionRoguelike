@@ -8,6 +8,8 @@
 
 class UPawnSensingComponent;
 class USAttributeComponent;
+class UUserWidget;
+class USWorldUserWidget;
 
 /* Pawn Sensing VS AI Perception:
  * To give sense of sight and hearing to AI
@@ -22,11 +24,18 @@ class ACTIONROGUELIKE_API ASAICharacter : public ACharacter
 public:
 
 	ASAICharacter();
+	
+	USWorldUserWidget* ActiveHealthBar;
 
 protected:
 
+
+	UPROPERTY(EditDefaultsOnly, Category="UI")
+	TSubclassOf<UUserWidget>HealthBarWidgetClass;
+
 	UPROPERTY(VisibleAnywhere, Category="Effects")
 	FName TimeToHitParamName;
+
 	
 	void SetTargetActor(AActor* NewTarget);
 	

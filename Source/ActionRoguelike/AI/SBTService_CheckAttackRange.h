@@ -25,5 +25,3 @@ private:
 	UPROPERTY(EditAnywhere)
 	float MaxAIDistatnce = 2000.f;
 };
-
-
