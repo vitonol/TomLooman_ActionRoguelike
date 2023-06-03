@@ -5,6 +5,8 @@
 #include "SInteractibleInterface.h"
 #include "DrawDebugHelpers.h"
 
+static TAutoConsoleVariable<bool>CVarDrawInteraction(TEXT("su.InteractionDebugDraw"), false, TEXT("Enable debug lines for Interacft Component"), ECVF_Cheat);
+
 // Sets default values for this component's properties
 USInteractionComponent::USInteractionComponent()
 {
@@ -36,6 +38,8 @@ void USInteractionComponent::TickComponent(float DeltaTime, ELevelTick TickType,
 
 void USInteractionComponent::PrimaryInteract()
 {
+	bool bDebugDraw = CVarDrawInteraction.GetValueOnGameThread();
+
 	FCollisionObjectQueryParams ObjectQueryParams;
 	ObjectQueryParams.AddObjectTypesToQuery(ECC_WorldDynamic);
 	AActor* MyOwner = GetOwner();
@@ -60,6 +64,8 @@ void USInteractionComponent::PrimaryInteract()
 	
 	for (auto& Hit  : Hits)
 	{
+		if (bDebugDraw)
+			DrawDebugSphere(GetWorld(), Hit.ImpactPoint, Radius, 32, LineColor, false, 2.f);
 		  
 		if (AActor* HitActor = Hit.GetActor()) // to avoid calling functions on nullptr
 		{
@@ -70,7 +76,8 @@ void USInteractionComponent::PrimaryInteract()
 				break; 
 			}
 		}
-		DrawDebugSphere(GetWorld(), Hit.ImpactPoint, Radius, 32, LineColor, false, 2.f);
+
 	}  
-	DrawDebugLine(GetWorld(), EyeLocation,End, LineColor, false, 2.f, 0, 1.5f );
+	if (bDebugDraw)
+		DrawDebugLine(GetWorld(), EyeLocation,End, LineColor, false, 2.f, 0, 1.5f );
 }

@@ -41,6 +41,11 @@ void ASCharacter::PostInitializeComponents()
 	AttributeComp->OnHealthChanged.AddDynamic(this, &ASCharacter::OnHealthChanged);
 }
 
+FVector ASCharacter::GetPawnViewLocation() const
+{
+	return CameraComp->GetComponentLocation();
+}
+
 void ASCharacter::HealSelf(float Amount /* 100 */)
 { 
 	AttributeComp->ApplyHealthChange(this, Amount);
