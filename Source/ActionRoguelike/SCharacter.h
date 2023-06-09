@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "SActionComponent.h"
 #include "SInteractionComponent.h"
 #include "Camera/CameraComponent.h"
 #include "GameFramework/Character.h"
@@ -14,6 +15,7 @@ class USpringArmComponent;
 class USInteractionComponent;
 class UAnimMontage;
 class USAttributeComponent;
+class USActionComponent;
 
 UCLASS() //property system
 class ACTIONROGUELIKE_API ASCharacter : public ACharacter
@@ -30,29 +32,7 @@ protected:
 
 	UPROPERTY(VisibleAnywhere, Category="Effect")
 	FName HandSocketName;
-	
-	UPROPERTY(EditAnywhere, Category="Attack")
-	TSubclassOf<AActor> ProjectileClass;
 
-	UPROPERTY(EditAnywhere, Category="Attack")
-	TSubclassOf<AActor> BlackHoleProjectileClass;
-
-	UPROPERTY(EditAnywhere, Category="Attack")
-	TSubclassOf<AActor> DashProjectileClass;
-
-	UPROPERTY(EditAnywhere, Category="Attack")
-	UAnimMontage* AttackAnim;
-
-	UPROPERTY(EditAnywhere, Category="Attack")
-	UParticleSystem* CastingEffect;
-	
-	FTimerHandle TimerHandle_PrimaryAttack;
-	FTimerHandle TimerHandle_BlackHoleAttack;
-	FTimerHandle TimerHandle_Dash;
-
-	UPROPERTY(EditAnywhere, Category="Attack")
-	float AttackAnimDelay;
-	
 protected:
 	UMaterialInstanceDynamic* MID;
 
@@ -67,41 +47,38 @@ protected:
 	
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
 	USAttributeComponent* AttributeComp;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
+	USActionComponent* ActionComp;
 	
-	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
 	void MoveForward(float value);
 	
 	void MoveRight(float value);
+
+	void SprintStart();
+	
+	void SprintStop();
 	
 	void PrimaryAttack();
-
-	void PrimaryAttack_TimeElapsed();
 	
 	void BlackHoleAttack();
-
-	void BlackHoleAttack_TimeElapsed();
-
+	
 	void PrimaryInteract();
 	
 	void Dash();
 	
-	void Dash_TimeElapsed();
-	
-	void SpawnProjectile(TSubclassOf<AActor> ClassTosSpawn);
-	
-	void StartAttackEffects();
-		
 	UFUNCTION()
 	void OnHealthChanged(AActor* InstigatorActor, USAttributeComponent* OwningComp, float NewHealth, float Delta);
 
 	virtual void PostInitializeComponents() override; // a bit better way to bind events, vs constructor
 
-	virtual FVector GetPawnViewLocation() const override;
 	
 public:	
-	// Called every frame
+
+	virtual FVector GetPawnViewLocation() const override;
+	
 	virtual void Tick(float DeltaTime) override;
 
 	UFUNCTION(Exec)    // only will work on the PC, PC, GameMode or CheatManager
