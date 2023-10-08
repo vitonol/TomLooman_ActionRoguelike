@@ -23,10 +23,6 @@
 			"TargetAllowList": [
 				"Editor"
 			]
-		},
-		{
-			"Name": "TouchEngine",
-			"Enabled": false
 		}
 	]
 }

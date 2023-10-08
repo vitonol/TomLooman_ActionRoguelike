@@ -111,7 +111,7 @@ void ASCharacter::MoveRight(float value)
 
 void ASCharacter::SprintStart()
 {
-	ActionComp->StartActinoByName(this, "Sprint");
+	ActionComp->StartActionByName(this, "Sprint");
 }
 
 void ASCharacter::SprintStop()
@@ -139,17 +139,17 @@ void ASCharacter::OnHealthChanged(AActor* InstigatorActor, USAttributeComponent*
 
 void ASCharacter::PrimaryAttack()
 {
-	ActionComp->StartActinoByName(this, "PrimaryAttack");
+	ActionComp->StartActionByName(this, "PrimaryAttack");
 }
 
 void ASCharacter::BlackHoleAttack()
 {
-	ActionComp->StartActinoByName(this, "BlackHoleAttack");
+	ActionComp->StartActionByName(this, "BlackHoleAttack");
 }
 
 void ASCharacter::Dash()
 {
-	ActionComp->StartActinoByName(this, "Dash");
+	ActionComp->StartActionByName(this, "Dash");
 }
 
 void ASCharacter::PrimaryInteract()

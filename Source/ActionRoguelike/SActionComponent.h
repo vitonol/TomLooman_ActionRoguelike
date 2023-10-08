@@ -3,8 +3,10 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "GameplayTagContainer.h"
 #include "SAction.h"
 #include "Components/ActorComponent.h"
+#include "GameplayTagContainer.h"
 #include "SActionComponent.generated.h"
 
 class USAction;
@@ -16,11 +18,14 @@ class ACTIONROGUELIKE_API USActionComponent : public UActorComponent
 
 public:
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Tags")
+	FGameplayTagContainer ActiveGameplayTag;
+	
 	UFUNCTION(BlueprintCallable, Category="Acftion")
 	void AddAction(TSubclassOf<USAction> ActionClass);
 
 	UFUNCTION(BlueprintCallable, Category="Acftion")
-	bool StartActinoByName(AActor* Instigator, FName ActionName);
+	bool StartActionByName(AActor* Instigator, FName ActionName);
 
 	UFUNCTION(BlueprintCallable, Category="Acftion")
 	bool StopActionByName(AActor* Instigator, FName ActionName);	
