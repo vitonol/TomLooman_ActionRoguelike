@@ -32,6 +32,11 @@ float USAttributeComponent::GetHealth()
 	return Health;
 }
 
+bool USAttributeComponent::IsFullHealth() const
+{
+	return Health == HealthMax;
+}
+
 bool USAttributeComponent::ApplyHealthChange(AActor* InstigatorActor, float Delta)
 {
 	if (!GetOwner()->CanBeDamaged()) return false;

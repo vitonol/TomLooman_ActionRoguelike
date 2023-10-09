@@ -33,6 +33,9 @@ protected:
 	
 public:
 
+	UPROPERTY(EditDefaultsOnly, Category="Action")
+	bool bAutoStart;
+	
 	UFUNCTION(BlueprintCallable, Category="Action")
 	bool IsRunning() const;
 	
@@ -40,17 +43,18 @@ public:
 	bool CanStart(AActor* Instigator);
 	
 	UFUNCTION(BlueprintNativeEvent, Category="Action")
-	void StartAction(AActor* Instigaor);
+	void StartAction(AActor* Instigator);
 
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category="Action")
-	void StopAction(AActor* Instigaor);
+	void StopAction(AActor* Instigator);
+
 	
-	UPROPERTY(EditDefaultsOnly, Category="Action")
 	/* // FText only for front facing (because it can be localzed, Fstring is mostly for debugging
 	 * FName is hashed and allows for fast comparison.
 	 * */
+	UPROPERTY(EditDefaultsOnly, Category="Action")
 	FName ActionName;
-
+	
 	UWorld* GetWorld() const override;
 	 
 };

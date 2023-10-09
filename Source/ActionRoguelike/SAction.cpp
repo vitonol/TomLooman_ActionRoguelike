@@ -4,7 +4,7 @@
 #include "SAction.h"
 #include "SActionComponent.h"
 
-void USAction::StartAction_Implementation(AActor* Instigaor)
+void USAction::StartAction_Implementation(AActor* Instigator)
 {
 	UE_LOG(LogTemp, Log, TEXT("Running: %s"), *GetNameSafe(this));
 
@@ -14,7 +14,7 @@ void USAction::StartAction_Implementation(AActor* Instigaor)
 	bIsRunning = true;
 }
 
-void USAction::StopAction_Implementation(AActor* Instigaor)
+void USAction::StopAction_Implementation(AActor* Instigator)
 {
 	UE_LOG(LogTemp, Log, TEXT("Stopped: %s"), *GetNameSafe(this));
 

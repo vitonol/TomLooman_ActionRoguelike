@@ -55,4 +55,6 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	float GetHealth();
+
+	bool IsFullHealth() const;
 };
