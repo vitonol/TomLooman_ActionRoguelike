@@ -9,6 +9,15 @@
 #include "Components/ArrowComponent.h"
 #include "PhysicsEngine/PhysicsThrusterComponent.h"
 
+void ASCopter::Interact_Implementation(APawn* InstigatorPawn)
+{
+	ISInteractibleInterface::Interact_Implementation(InstigatorPawn);
+
+	APlayerController* PC = Cast<APlayerController>(InstigatorPawn->GetController());
+	PC->Possess(this);
+	
+}
+
 // Sets default values
 ASCopter::ASCopter()
 {
@@ -100,8 +109,8 @@ void ASCopter::OnActorOverlap(UPrimitiveComponent* OverlappedComponent, AActor* 
 {
 	if (ASCharacter* Char = Cast<ASCharacter>(OtherActor))
 	{
-		APlayerController* PC = Cast<APlayerController>(GetWorld()->GetFirstPlayerController());
-		PC->Possess(this);
+		// APlayerController* PC = Cast<APlayerController>(GetWorld()->GetFirstPlayerController());
+		// PC->Possess(this);
 	}
 }
 

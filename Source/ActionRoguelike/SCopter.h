@@ -5,7 +5,8 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
 #include "PhysicsEngine/PhysicsThruster.h"
-#include "PhysicsEngine/PhysicsThrusterComponent.h"
+// #include "PhysicsEngine/PhysicsThrusterComponent.h"
+#include "SInteractibleInterface.h"
 #include "SCopter.generated.h"
 
 class UStaticMeshComponent;
@@ -17,10 +18,11 @@ class UArrowComponent;
 // class APhysicsThruster;;
 
 UCLASS()
-class ACTIONROGUELIKE_API ASCopter : public APawn
+class ACTIONROGUELIKE_API ASCopter : public APawn, public ISInteractibleInterface
 {
 	GENERATED_BODY()
 
+	void Interact_Implementation(APawn* InstigatorPawn) override;
 public:
 	// Sets default values for this pawn's properties
 	ASCopter();
