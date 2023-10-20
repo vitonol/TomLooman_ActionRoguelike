@@ -9,17 +9,163 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0406d380-ba0d-48da-8b82-39f396c20617" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/ActionRoguelike/UI/WBP_WorldInteraction.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Heli/Assets/Textures/M_Body.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Heli/Assets/Textures/M_Glass.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Heli/Assets/Textures/M_RotorBlur.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Heli/Assets/Textures/M_TailRotorBlur.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Heli/Assets/Textures/little_bird_glass_BaseColor.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Heli/Assets/Textures/little_bird_glass_Normal.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Heli/Assets/Textures/little_bird_glass_OcclusionRoughnessMetallic.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Heli/Assets/Textures/little_bird_main_body_BaseColor.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Heli/Assets/Textures/little_bird_main_body_Normal.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Heli/Assets/Textures/little_bird_main_body_OcclusionRoughnessMetallic.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Heli/Assets/Textures/main_rotor_blur.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Heli/Assets/Textures/tail_rotor_blur.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Heli/Assets/main_body.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Heli/Assets/main_rotor.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Heli/Assets/main_rotor_blade.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Heli/Assets/main_rotor_blade_blur.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Heli/Assets/rear_rotor.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Heli/Assets/rear_rotor_blade.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Heli/Assets/tail_rotor_blade_blur.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Heli/BP_SimpleCopter.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Helipad.umap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Gamemode/BP_GameMode.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Gamestate/BP_GameState.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/HUD/BP_ShowcaseHidden.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/HUD/BP_ShowcaseVisible.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/HUD/Widgets/Components/W_BaseControls.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/HUD/Widgets/Components/W_ButtonsControl.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/HUD/Widgets/Components/W_CameraButton.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/HUD/Widgets/Components/W_CheckboxControl.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/HUD/Widgets/Components/W_Separator.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/HUD/Widgets/Components/W_SliderControl.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/HUD/Widgets/Components/W_TwinSliderControl.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/HUD/Widgets/W_ShowcaseControls.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/HUD/Widgets/W_VehicleControls.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Map/Platform/Cylinder/Materials/M_Platform.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Map/Platform/Cylinder/Materials/Textures/T_Platform_ARM.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Map/Platform/Cylinder/Materials/Textures/T_Platform_D.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Map/Platform/Cylinder/Materials/Textures/T_Platform_N.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Map/Platform/Cylinder/SM_Platform.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Map/Platform/LOGO/Materials/M_Vigilante_Logo.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Map/Platform/LOGO/Materials/Textures/T_Vigilante_Logo_D.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Map/Platform/LOGO/Materials/Textures/T_Vigilante_Logo_N.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Map/Platform/LOGO/Materials/Textures/T_vigilante_logo_ARM.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Map/Platform/LOGO/SM_Vigilante_Logo.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Map/WiderPlatform.umap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Materials/M_Master_Damaged.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Materials/M_Master_Glass.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Materials/M_Master_Glass_ARM_N.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Materials/M_Master_Main.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Materials/M_Master_Tracks.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/MaterialFunctions/AngleFadeOut_MF.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Materials/MasterMaterials/M_12X12_Smokes_01_M.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Materials/MasterMaterials/M_2X2_Fire_FlowMap_01_M.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Materials/MasterMaterials/M_2X2_SubUV_Debris_01_M.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Materials/MasterMaterials/M_2X2_SubUV_MuzzleFlash_B.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Materials/MasterMaterials/M_2X2_SubUV_MuzzleFlash_R.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Materials/MasterMaterials/M_2X2_SubUV_Smokes_01_M.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Materials/MasterMaterials/M_4X1_SubUV_MuzzleFlash_G.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Materials/MasterMaterials/M_4X1_SubUV_MuzzleFlash_R.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Materials/MasterMaterials/M_8X8_DustWheel_01_M_2.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Materials/MasterMaterials/M_8X8_Smokes_02_M.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Materials/MasterMaterials/M_8X8_Smokes_04_M.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Materials/MasterMaterials/M_8X8_WaterSpray_01_M.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Materials/MasterMaterials/M_Cone_Engine_01_M.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Materials/MasterMaterials/M_Cone_Engine_02_M.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Materials/MasterMaterials/M_Distortion_02_M.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Materials/MasterMaterials/M_Distortion_Master.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Materials/MasterMaterials/M_Fire_01_M.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Materials/MasterMaterials/M_Fire_02_M.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Materials/MasterMaterials/M_Fire_03_M.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Materials/MasterMaterials/M_GPU_EngineCore_01_M.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Materials/MasterMaterials/M_GPU_EngineCore_02_M.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Materials/MasterMaterials/M_GPU_EngineCore_03_M.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Materials/MasterMaterials/M_Sparks_01_M.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Materials/MasterMaterials/M_Sparks_02_M.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Materials/MasterMaterials/M_WaterHaze_01_M.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Materials/MasterMaterials/M_WaterSplash_01_M.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Materials/MasterMaterials/M_WaterSplash_02_M.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Materials/MasterMaterials/M_WaterSplash_03_M.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Materials/MasterMaterials/M_WaterSplash_04_M.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Materials/MasterMaterials/Smoke/M_SoftSmokeCentered_VL_01.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Materials/MasterMaterials/Smoke/M_WheelDust.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/ParticleSystems/PS_Dust_WheelTrack_01.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/ParticleSystems/PS_Dust_WheelTrack_02.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/ParticleSystems/PS_WheelFX_GenericTank.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/StaticMeshes/SM_AfterBurner_Cylinder.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/StaticMeshes/SM_RocketBooster_02_SM.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/StaticMeshes/SM_RocketBooster_03_SM.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Textures/Debris/T_2x2_Dusts_01_BC.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Textures/Engine/T_Cone_EngineBooster_01_CH.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Textures/Engine/T_Stencil_Sphere_Ring_CH_01.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Textures/MuzzleFlash/T_2X2_MuzzlePoint_01_CH.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Textures/MuzzleFlash/T_4X1_MuzzleSide_01_CH.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Textures/MuzzleFlash/T_Spark_01_a.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Textures/Normals/T_BlurNormalSphere_N.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Textures/Normals/T_Noise_N.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Textures/Normals/T_Water_height_N.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Textures/Smoke/T_2X2_Smokes_01_CH.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Textures/Smoke/T_8X8_Smokes_02.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Textures/Smoke/T_Fire_Mask_01.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Textures/Smoke/T_Fire_Seamless_02.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Textures/Smoke/T_Noise_a.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Textures/Smoke/T_RGBA_CumulusTiled_01.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Textures/Smoke/T_Smoke_Variation_01_CH.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Textures/Smoke/T_SoftSmoke_Centered_a.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Textures/T_SoftSmokeBall_VL144_a.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Textures/Water/T_8X8_WaterSide_01.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Textures/Water/T_8X8_WaterSide_02.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Textures/Water/T_8X8_Water_01.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Textures/Water/T_8X8_Water_02.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Particles/Textures/Water/T_Gradient_01.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Showcase/Component/BP_ShowcaseSetupComponent.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Showcase/Component/FButtonsControls.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Showcase/Component/FCheckboxControls.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Showcase/Component/FSeparator.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Showcase/Component/FSliderControls.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Showcase/Component/FTwinSliderControls.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Showcase/Interfaces/BP_ShowcaseControlsInterface.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Showcase/Interfaces/BP_ShowcaseSetupInterface.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Showcase/Interfaces/ShowcaseControlsInterface.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Showcase/Interfaces/ShowcaseSetupInterface.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Shared/Vehicle_lightRig/VLR.umap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Vehicles/West_Heli_AH64D/ABP_West_Heli_AH64D.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Vehicles/West_Heli_AH64D/BP_West_Heli_AH64D.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Vehicles/West_Heli_AH64D/BP_West_Heli_AH64D_Showcase.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Vehicles/West_Heli_AH64D/Damaged/Materials/MI_West_Heli_AH64D_Damaged.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Vehicles/West_Heli_AH64D/Damaged/Materials/Textures/T_West_Heli_AH64D_Damaged_ARM.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Vehicles/West_Heli_AH64D/Damaged/Materials/Textures/T_West_Heli_AH64D_Damaged_D.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Vehicles/West_Heli_AH64D/Damaged/Materials/Textures/T_West_Heli_AH64D_Damaged_N.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Vehicles/West_Heli_AH64D/Damaged/SM_West_Heli_Ah64D_Damaged.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Vehicles/West_Heli_AH64D/FX/PS_MuzzleFlash_01_Heli_AH64D.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Vehicles/West_Heli_AH64D/FX/PS_Wreckage_01_Heli_AH64D.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Vehicles/West_Heli_AH64D/Level/West_Heli_AH64D.umap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Vehicles/West_Heli_AH64D/Level/West_Heli_AH64D_LTG.umap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Vehicles/West_Heli_AH64D/Level/West_Heli_AH64D_Vehicle.umap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Vehicles/West_Heli_AH64D/Materials/MI_West_Heli_AH64D_Glass_.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Vehicles/West_Heli_AH64D/Materials/MI_West_Heli_AH64D_Main.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Vehicles/West_Heli_AH64D/Materials/Textures/T_West_Heli_AH64D_ARM.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Vehicles/West_Heli_AH64D/Materials/Textures/T_West_Heli_AH64D_D.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Vehicles/West_Heli_AH64D/Materials/Textures/T_West_Heli_AH64D_E.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Vehicles/West_Heli_AH64D/Materials/Textures/T_West_Heli_AH64D_Glass_ARM.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Vehicles/West_Heli_AH64D/Materials/Textures/T_West_Heli_AH64D_Glass_D.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Vehicles/West_Heli_AH64D/Materials/Textures/T_West_Heli_AH64D_Glass_N.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Vehicles/West_Heli_AH64D/Materials/Textures/T_West_Heli_AH64D_N.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Vehicles/West_Heli_AH64D/PHYS_West_Heli_AH64D.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Vehicles/West_Heli_AH64D/SKEL_West_Heli_AH64D.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VigilanteContent/Vehicles/West_Heli_AH64D/SK_West_Heli_AH64D.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ActionRoguelike/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ActionRoguelike/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultInput.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultInput.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/BP_PlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/BP_PlayerCharacter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/BP_MagicProjectile.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/BP_MagicProjectile.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/BP_MagicProjectile_Child_AI.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/BP_MagicProjectile_Child_AI.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/Heli/BP_Copter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Heli/BP_Copter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/Maps/TestLevel.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Maps/TestLevel.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/Materials/MI_fireex_01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Materials/MI_fireex_01.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/Heli/SM_Helicopter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Heli/SM_Helicopter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/UI/WBP_PlayerHealth.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/UI/WBP_PlayerHealth.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/SCopter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SCopter.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/SCopter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SCopter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/SInteractionComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SInteractionComponent.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/SInteractionComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SInteractionComponent.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/SFlyingObject.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SFlyingObject.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/SFlyingObject.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SFlyingObject.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +173,149 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Epic Games/UE_5.1/Engine/Source/Developer/GraphColor/Private/stack.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Epic Games/UE_5.1/Engine/Source/Runtime/GeometryCore/Private/CompGeom/ThirdParty/ShewchukPredicatesInterface.h" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/ActionRoguelike/AI/SAIController.cpp" root0="FORCE_HIGHLIGHTING" />
@@ -276,6 +565,8 @@
       <workItem from="1697561718557" duration="660000" />
       <workItem from="1697587726625" duration="2603000" />
       <workItem from="1697675179224" duration="5399000" />
+      <workItem from="1697728891499" duration="5275000" />
+      <workItem from="1697752084935" duration="1731000" />
     </task>
     <servers />
   </component>
@@ -300,17 +591,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Source/ActionRoguelike/SCopter.h</url>
-          <line>41</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

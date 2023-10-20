@@ -13,7 +13,6 @@ ASFlyingObject::ASFlyingObject()
 	Mesh->SetupAttachment(RootComponent);
 	Mesh->SetCollisionEnabled(ECollisionEnabled::PhysicsOnly);
 	// Mesh->bUseDefaultCollision(true);
-	Mesh->OnComponentBeginOverlap.AddDynamic(this, &ASFlyingObject::OnActorOverlap);
 	   
 }
 
@@ -24,12 +23,6 @@ void ASFlyingObject::BeginPlay()
 	
 }
 
-void ASFlyingObject::OnActorOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
-	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
-{
-	
-	Mesh->AddImpulseAtLocation(FVector(FMath::RandRange(1.f, 4.f)),OtherActor->GetActorLocation());
-}
 
 // Called every frame
 void ASFlyingObject::Tick(float DeltaTime)
