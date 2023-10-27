@@ -19,6 +19,8 @@
 #include "Engine/AssetManager.h"
 // #include "Subsystems/SActorPoolingSubsystem.h"
 
+#include "EnvironmentQuery/EnvQuery.h"
+
 #include UE_INLINE_GENERATED_CPP_BY_NAME(SGameModeBase)
 
 
@@ -61,7 +63,7 @@ void ASGameModeBase::InitGame(const FString& MapName, const FString& Options, FS
 void ASGameModeBase::StartPlay()
 {
 	Super::StartPlay();
-
+	
 	AvailableSpawnCredit = InitialSpawnCredit;
 
 	if (bAutoStartBotSpawning)
@@ -75,6 +77,12 @@ void ASGameModeBase::StartPlay()
 		// Skip the Blueprint wrapper and use the direct C++ option which the Wrapper uses as well
 		FEnvQueryRequest Request(PowerupSpawnQuery, this);
 		Request.Execute(EEnvQueryRunMode::AllMatching, this, &ASGameModeBase::OnPowerupSpawnQueryCompleted);
+
+		// UEnvQueryInstanceBlueprintWrapper* QueryInstance = UEnvQueryManager::RunEQSQuery(this, PowerupSpawnQuery, this, EEnvQueryRunMode::AllMatching, nullptr);
+		// if (ensure(QueryInstance))
+		// {
+		// 	QueryInstance->GetOnQueryFinishedEvent().AddDynamic(this, &ASGameModeBase::OnPowerupSpawnQueryCompleted);
+		// }
 	}
 	
 	// We run the prime logic after the BeginPlay call to avoid accidentally running that on stored/primed actors

@@ -43,7 +43,10 @@ ASProjectileBase::ASProjectileBase()
 
 	// Directly set bool instead of going through SetReplicates(true) within constructor,
 	// Only use SetReplicates() outside constructor
-	bReplicates = true;
+	
+	// bReplicates = true;
+
+	// SetReplicates(true);
 }
 
 
@@ -127,8 +130,8 @@ void ASProjectileBase::Explode_Implementation()
 
 		//Destroy();
 		// Release back to pool instead of destroying
-		// USActorPoolingSubsystem* PoolingSubsystem = GetWorld()->GetSubsystem<USActorPoolingSubsystem>();
-		// PoolingSubsystem->ReleaseToPool(this);
+		USActorPoolingSubsystem* PoolingSubsystem = GetWorld()->GetSubsystem<USActorPoolingSubsystem>();
+		PoolingSubsystem->ReleaseToPool(this);
 	}
 }
 

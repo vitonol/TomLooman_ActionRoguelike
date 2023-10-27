@@ -27,7 +27,9 @@ ASAICharacter::ASAICharacter()
 	// GetCapsuleComponent()->SetCollisionResponseToChannel(ECC_WorldDynamic, ECR_Ignore);
 	// GetMesh()->SetGenerateOverlapEvents(true);
 
-	TimeToHitParamName = "TimeToHit";	
+	TimeToHitParamName = "TimeToHit";
+
+	TargetActorKey = "TargetActor";
 }
 
 
@@ -78,14 +80,39 @@ void ASAICharacter::SetTargetActor(AActor* NewTarget)
 	AAIController* AIC = Cast<AAIController>(GetController());
 	if (AIC)
 	{
-		AIC->GetBlackboardComponent()->SetValueAsObject("TargetActor", NewTarget);
+		AIC->GetBlackboardComponent()->SetValueAsObject(TargetActorKey, NewTarget);
 	}
+}
+
+
+AActor* ASAICharacter::GetTargetActor() const
+{
+	if (AAIController* AIC = Cast<AAIController>(GetController()) )
+	{
+		return Cast<AActor>(AIC->GetBlackboardComponent()->GetValueAsObject(TargetActorKey));
+	}
+	return nullptr;
 }
 
 void ASAICharacter::OnPawnSeen(APawn* Pawn)
 {
-	SetTargetActor(Pawn);
-	DrawDebugString(GetWorld(), GetActorLocation(), "PLAYER SPOTTER", nullptr, FColor::White, 4.f, true);
+	if (GetTargetActor() != Pawn)
+	{
+		SetTargetActor(Pawn);
+
+		MulticastPawnSeen();
+	}
+	// DrawDebugString(GetWorld(), GetActorLocation(), "PLAYER SPOTTER", nullptr, FColor::White, 4.f, true);
 }
  
 
+void ASAICharacter::MulticastPawnSeen_Implementation()
+{
+	if (USWorldUserWidget* NewWidget = CreateWidget<USWorldUserWidget>(GetWorld(), SpottedWidgetClass))
+	{
+		NewWidget->AttachedActor = this;
+		// Index of 10 (or anything higher than default of 0) places this on top of any other widget.
+		// May end up behind the minion health bar otherwise.
+		NewWidget->AddToViewport(10);
+	}
+}

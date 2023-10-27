@@ -2,6 +2,8 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 #include "SAttributeComponent.h"
 #include "SGameModeBase.h"
+#include "Kismet/GameplayStatics.h"
+#include "Net/UnrealNetwork.h"
 
 static TAutoConsoleVariable<float>CVarDamageMultiplier(TEXT("su.DamageMultipliuer"), 1.f, TEXT("Enable damage multiplier"), ECVF_Cheat);
 
@@ -9,6 +11,16 @@ USAttributeComponent::USAttributeComponent()
 {
 	HealthMax = 100.f;
 	Health = HealthMax;
+
+	Rage = 0;
+	RageMax = 100.f;
+
+	SetIsReplicatedByDefault(true); 
+}
+
+void USAttributeComponent::MulticastHealthChanged_Implementation(AActor* Instigator, float NewHealth, float Delta)
+{
+	OnHealthChanged.Broadcast(Instigator, this, NewHealth, Delta); // Fire and forget, while Health var is still replicated
 }
 
 bool USAttributeComponent::Kill(AActor* Instigator)
@@ -37,6 +49,26 @@ bool USAttributeComponent::IsFullHealth() const
 	return Health == HealthMax;
 }
 
+float USAttributeComponent::GetRage() const
+{
+	return Rage;
+}
+
+bool USAttributeComponent::ApplyRage(AActor* InstigatorActor, float Delta)
+{
+	float OldRage = Rage;
+
+	Rage = FMath::Clamp(Rage + Delta, 0.0f, RageMax);
+
+	float ActualDelta = Rage - OldRage;
+	if (ActualDelta != 0.0f)
+	{
+		OnRageChanged.Broadcast(InstigatorActor, this, Rage, ActualDelta);
+	}
+
+	return ActualDelta != 0;
+}
+
 bool USAttributeComponent::ApplyHealthChange(AActor* InstigatorActor, float Delta)
 {
 	if (!GetOwner()->CanBeDamaged()) return false;
@@ -52,7 +84,12 @@ bool USAttributeComponent::ApplyHealthChange(AActor* InstigatorActor, float Delt
 	Health = FMath::Clamp(Health + Delta, 0.f, HealthMax);
 
 	float ActualDelta = Health - OldHealth;
-	OnHealthChanged.Broadcast(InstigatorActor, this, Health, ActualDelta);
+	// OnHealthChanged.Broadcast(InstigatorActor, this, Health, ActualDelta);
+
+	if (ActualDelta != 0.f)
+	{
+		MulticastHealthChanged(InstigatorActor, Health, ActualDelta);
+	}
 
 	// DIED
 	if (ActualDelta < 0.f && Health == 0.f)
@@ -85,4 +122,16 @@ bool USAttributeComponent::IsActorAlive(AActor* Actor)
 		return AttributeComp->IsAlive();
 	}
 	return false;
+}
+
+void USAttributeComponent::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
+{
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+
+	DOREPLIFETIME(USAttributeComponent, Health);
+	DOREPLIFETIME(USAttributeComponent, HealthMax);
+
+	// DOREPLIFETIME_CONDITION(USAttributeComponent, HealthMax, COND_OwnerOnly); // Optimization, to only send  nessesary data. Also better for CPU:  COND_InitialOnly
+
+	
 }

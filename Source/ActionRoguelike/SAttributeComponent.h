@@ -11,7 +11,9 @@
 	efficient and conviniet
  */
 
-DECLARE_DYNAMIC_MULTICAST_DELEGATE_FourParams(FOnHealthChanged, AActor*, InstigatorActor, USAttributeComponent*, OwningComp, float, NewHealth, float, Delta);
+// DECLARE_DYNAMIC_MULTICAST_DELEGATE_FourParams(FOnHealthChanged, AActor*, InstigatorActor, USAttributeComponent*, OwningComp, float, NewHealth, float, Delta);
+
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_FourParams(FOnAttributeChanged, AActor*, InstigatorActor, USAttributeComponent*, OwningComp, float, NewValue, float, Delta);
 
 UCLASS()
 class ACTIONROGUELIKE_API USAttributeComponent : public UActorComponent
@@ -30,11 +32,28 @@ public:
 
 protected:
 		
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Attributes")
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Replicated, Category = "Attributes")
 	float Health;
 
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Attributes")
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Replicated, Category = "Attributes")
 	float HealthMax;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Attributes")
+	float Rage;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Attributes")
+	float RageMax;
+
+	/*
+	 * NetMulticast is good for transient events like exolosion
+	 *
+	 * Rep/WNotify is good for state of the things, also will work for later joiners
+	 *
+	 *NetMulticast, Reliable ignores relevancy
+	 */
+	
+	UFUNCTION(NetMulticast, Reliable) //@TODO Fixme:  should be Unreliable because it is cosmetic
+	void MulticastHealthChanged(AActor* Instigator,  float NewHealth, float Delta);
 	
 public:
 
@@ -44,8 +63,11 @@ public:
 	UFUNCTION(BlueprintCallable)
 	bool IsAlive() const;
 	
-	UPROPERTY(BlueprintAssignable) // lets us in UI to bind or subscribe
- 	FOnHealthChanged OnHealthChanged;
+	UPROPERTY(BlueprintAssignable,  Category = "Attributes") // lets us in UI to bind or subscribe
+ 	FOnAttributeChanged OnHealthChanged;
+
+	UPROPERTY(BlueprintAssignable,  Category = "Attributes")
+	FOnAttributeChanged OnRageChanged;
 	
 	UFUNCTION(BlueprintCallable, Category = "Attributes")
 	bool ApplyHealthChange(AActor* InstigatorActor, float Delta);
@@ -57,4 +79,10 @@ public:
 	float GetHealth();
 
 	bool IsFullHealth() const;
+
+	UFUNCTION(BlueprintCallable)
+	float GetRage() const;
+
+	UFUNCTION(BlueprintCallable, Category = "Attributes")
+	bool ApplyRage(AActor* InstigatorActor, float Delta);
 };

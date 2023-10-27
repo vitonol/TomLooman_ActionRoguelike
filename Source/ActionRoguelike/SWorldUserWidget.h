@@ -26,7 +26,7 @@ public:
 	UPROPERTY(EditAnywhere, Category = "UI")
 	FVector WorldOffset;
 
-	UPROPERTY(BlueprintReadOnly, Category="UI")			 // not only makes it available in the Blueprint graph, but also reference counting. 
-	AActor* AttachedActor; 								// as soon as Actor clears - actor becomes null (prevents any sort of dangling references)
+	UPROPERTY(BlueprintReadWrite, Category="UI", meta = (ExposeOnSpawn=true))	 // not only makes it available in the Blueprint graph, but also reference counting. 
+	AActor* AttachedActor; 	// as soon as Actor clears - actor becomes null (prevents any sort of dangling references)
 	
 };

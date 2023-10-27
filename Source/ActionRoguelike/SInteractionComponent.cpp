@@ -30,7 +30,11 @@ void USInteractionComponent::TickComponent(float DeltaTime, ELevelTick TickType,
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
-	FindBestInteractable();
+	APawn* MyPawn = Cast<APawn>(GetOwner());
+	if (MyPawn->IsLocallyControlled())
+	{
+		FindBestInteractable();
+	}
 }
 
 void USInteractionComponent::FindBestInteractable()
@@ -64,7 +68,7 @@ void USInteractionComponent::FindBestInteractable()
 	for (auto& Hit  : Hits)
 	{
 		if (bDebugDraw)
-			DrawDebugSphere(GetWorld(), Hit.ImpactPoint, TraceRadius, 32, LineColor, false, 2.f);
+			DrawDebugSphere(GetWorld(), Hit.ImpactPoint, TraceRadius, 32, LineColor, false, 0.f);
 		  
 		if (AActor* HitActor = Hit.GetActor()) // to avoid calling functions on nullptr
 			{
@@ -107,12 +111,17 @@ void USInteractionComponent::FindBestInteractable()
 
 void USInteractionComponent::PrimaryInteract()
 {
-	if (FocusedActor == nullptr)
+	ServerInteract(FocusedActor);
+}
+
+void USInteractionComponent::ServerInteract_Implementation(AActor* InFocus) // When sending as an RPC it sends as ID 
+{
+	if (InFocus == nullptr)
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Red, "No Focus Actor to interact");
 		return;
 	}
 	
 	APawn* MyPawn = Cast<APawn>(GetOwner()); // safe casting, no need to check for nullptr
-	ISInteractibleInterface::Execute_Interact(FocusedActor, MyPawn);
+	ISInteractibleInterface::Execute_Interact(InFocus, MyPawn);
 }

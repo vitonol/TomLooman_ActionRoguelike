@@ -2,6 +2,9 @@
 
 
 #include "SItemChest.h"
+#include "Net/UnrealNetwork.h"
+
+#include "Net/UnrealNetwork.h"
 
 
 // Sets default values
@@ -15,22 +18,40 @@ ASItemChest::ASItemChest()
 
 	LidMesh = CreateDefaultSubobject<UStaticMeshComponent>("LidMesh");
 	LidMesh->SetupAttachment(BaseMesh);
-	TargetPitch = 110.f;
+	TargetPitch = 0;
+
+	SetReplicates(true);
 }
 
 void ASItemChest::Interact_Implementation(APawn* InstigatorPawn)
 {
-	SetActorTickEnabled(true);
+	bLidOpened = !bLidOpened;
+	OnRep_LidOpend(); // need to manually call on the server
 }
 
 void ASItemChest::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	float Curent = LidMesh->GetRelativeRotation().Pitch;
+	float CurentPitch = LidMesh->GetRelativeRotation().Pitch;
 	float SpeedMultiplier = 1.5f;
-	float Target = (Curent + DeltaTime*(TargetPitch - Curent) * SpeedMultiplier);
-	
-	LidMesh->SetRelativeRotation(FRotator(Target, 0 , 0));
+	float Target = (CurentPitch + DeltaTime*(TargetPitch - CurentPitch) * SpeedMultiplier);
+
+	if (!FMath::IsNearlyEqual(Target, TargetPitch, 1.f)) // does not work =( 
+	{
+		LidMesh->SetRelativeRotation(FRotator(Target, 0 , 0)); // @TODO junk fix me
+	}
 }
 
+void ASItemChest::OnRep_LidOpend()
+{
+	TargetPitch = bLidOpened ? 110.f : 0;
+	SetActorTickEnabled(true);
+}
+
+void ASItemChest::GetLifetimeReplicatedProps(TArray< FLifetimeProperty > & OutLifetimeProps) const
+{
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+
+	DOREPLIFETIME(ASItemChest, bLidOpened); // everytime lid is open send it to all clients	
+}

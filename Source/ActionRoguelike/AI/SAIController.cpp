@@ -12,7 +12,7 @@ void ASAIController::BeginPlay()
 
 	if (ensureMsgf(BehaviorTree, TEXT("Behaviour Tree is Nullptr! Please assign behaviour tree in your AI controller")))
 	{
-		RunBehaviorTree(BehaviorTree);
+		RunBehaviorTree(BehaviorTree); // Only server runs this logic
 	}
 
 	//staring code:

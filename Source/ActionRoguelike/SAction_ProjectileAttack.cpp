@@ -20,7 +20,9 @@ void USAction_ProjectileAttack::StartAction_Implementation(AActor* Instigaor)
 		if (ASCharacter* Char = Cast<ASCharacter>(Instigaor))
 		{
 			Char->PlayAnimMontage(AttackAnim);
-			UGameplayStatics::SpawnEmitterAttached(CastingEffect, Char->GetMesh(), HandSocketName, FVector::ZeroVector, FRotator::ZeroRotator,EAttachLocation::SnapToTarget);
+			
+			UGameplayStatics::SpawnEmitterAttached(CastingEffect, Char->GetMesh(), HandSocketName, FVector::ZeroVector,
+							FRotator::ZeroRotator,EAttachLocation::SnapToTarget, true, EPSCPoolMethod::AutoRelease);
 
 			FTimerHandle TimerHandle_AttackAnimDelay;
 			FTimerDelegate Delegate;

@@ -16,6 +16,11 @@ class ACTIONROGUELIKE_API USInteractionComponent : public UActorComponent
 
 public:
 	void PrimaryInteract();
+
+protected:
+
+	UFUNCTION(Server, Reliable)
+	void ServerInteract(AActor* InFocus);
 	
 public:	
 	// Sets default values for this component's properties

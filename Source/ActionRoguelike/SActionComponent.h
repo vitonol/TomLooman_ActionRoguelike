@@ -27,6 +27,10 @@ public:
 	UFUNCTION(BlueprintCallable, Category="Acftion")
 	void RemoveAction(USAction* ActionToRemove);
 
+	/* Returns first occurrence of action matching the class provided */
+	UFUNCTION(BlueprintCallable, Category = "Actions")
+	USAction* GetAction(TSubclassOf<USAction> ActionClass) const;
+
 	UFUNCTION(BlueprintCallable, Category="Acftion")
 	bool StartActionByName(AActor* Instigator, FName ActionName);
 
@@ -37,6 +41,12 @@ public:
 
 protected:
 
+	UFUNCTION(Server, Reliable)
+	void ServerStartAction(AActor* Instigator, FName ActionName);
+
+	UFUNCTION(Server, Reliable)
+	void ServerStopAction(AActor* Instigator, FName ActionName);
+	
 	UPROPERTY(EditAnywhere, Category="Actions")
 	TArray<TSubclassOf<USAction>> DefaultActions;
 	
