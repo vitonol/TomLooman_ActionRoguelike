@@ -172,7 +172,7 @@ void ASCopter::Tick(float DeltaTime)
 	FVector Vel = ThrusterComp->GetComponentVelocity();
 	FString DebugMsg = Vel.ToString();
 
-	GEngine->AddOnScreenDebugMessage(-1, 0.f, FColor::White,  FString::Printf(TEXT("Velocity: %s"), *DebugMsg));
+	// GEngine->AddOnScreenDebugMessage(-1, 0.f, FColor::White,  FString::Printf(TEXT("Velocity: %s"), *DebugMsg));
 }
 
 

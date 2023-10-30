@@ -9,51 +9,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0406d380-ba0d-48da-8b82-39f396c20617" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Heli/Curve_Pitch.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Materials/MI_Rage.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Ornithopter/Bottom_parts_MT.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/ActionRoguelike/UI/WBP_Rage.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/ParagonGideon/FX/Particles/Gideon/Abilities/Primary/FX/P_Gideon_Primary_Projectile_Converted.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SActionEffect_Thorns.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SActionEffect_Thorns.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SPowerup_Action.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SPowerup_Action.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Heli/BP_HelicopterSM.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Input/IMC.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Input/MoveUp.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SHelicopterSM.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SHelicopterSM.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ActionRoguelike.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ActionRoguelike.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ActionRoguelike/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ActionRoguelike/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/Actions/BP_AcftionSprint.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Actions/BP_AcftionSprint.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/Actions/BP_ActionBlackHole.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Actions/BP_ActionBlackHole.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/Actions/BP_ActionMagicProjecftile.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Actions/BP_ActionMagicProjecftile.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/Actions/BP_Action_Parry.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Actions/BP_Action_Parry.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/BP_ExplosiveBarrel.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/BP_ExplosiveBarrel.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/BP_MagicProjectile.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/BP_MagicProjectile.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/BP_MagicProjectile_Child_AI.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/BP_MagicProjectile_Child_AI.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/BP_PlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/BP_PlayerCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/BP_PlayerController.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/BP_PlayerController.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/BP_TreasureChest.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/BP_TreasureChest.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/Maps/TestLevel.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Maps/TestLevel.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/Materials/M_Health.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Materials/M_Health.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/UI/WBP_MainHUD.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/UI/WBP_MainHUD.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/UI/WBP_MinionHealthWidget.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/UI/WBP_MinionHealthWidget.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/UI/WBP_PlayerHealth.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/UI/WBP_PlayerHealth.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ParagonGideon/FX/Materials/Flares/M_GlowPoint_DistShrink_MASTER.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ParagonGideon/FX/Materials/Flares/M_GlowPoint_DistShrink_MASTER.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/AI/SAICharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/AI/SAICharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/AI/SAICharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/AI/SAICharacter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/AI/SAIController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/AI/SAIController.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/SActionComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SActionComponent.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/SActionComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SActionComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/SAction_ProjectileAttack.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SAction_ProjectileAttack.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/SAttributeComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SAttributeComponent.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/SAttributeComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SAttributeComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/SCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/SGameModeBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SGameModeBase.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/SGameplayFunctionLibrary.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SGameplayFunctionLibrary.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/SInteractionComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SInteractionComponent.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/SInteractionComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SInteractionComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/SItemChest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SItemChest.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/SItemChest.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SItemChest.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/SPowerupActor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SPowerupActor.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/SProjectileBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SProjectileBase.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/SWorldUserWidget.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SWorldUserWidget.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Helipad.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Helipad.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/SCopter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SCopter.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,8 +28,24 @@
     <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Epic Games/UE_5.1/Engine/Source/Developer/GraphColor/Private/stack.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Epic Games/UE_5.1/Engine/Source/Runtime/GeometryCore/Private/CompGeom/ThirdParty/ShewchukPredicatesInterface.h" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://C:/Program Files/Epic Games/UE_5.2/Engine/Source/Runtime/Engine/Private/UnrealEngine.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://C:/Program Files/Epic Games/UE_5.2/Engine/Source/Runtime/GeometryCore/Private/CompGeom/ThirdParty/ShewchukPredicatesInterface.h" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Epic Games/UE_5.2/Engine/Source/ThirdParty/NVIDIA/CUDA/cuda.h" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Epic Games/UE_5.2/Engine/Source/ThirdParty/NVIDIA/nvapi/nvapi_lite_common.h" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/ActionRoguelike/AI/SAIController.cpp" root0="FORCE_HIGHLIGHTING" />
@@ -324,7 +304,10 @@
       <workItem from="1698037281030" duration="58000" />
       <workItem from="1698099360953" duration="4285000" />
       <workItem from="1698174638586" duration="3847000" />
-      <workItem from="1698413889537" duration="8463000" />
+      <workItem from="1698413889537" duration="9035000" />
+      <workItem from="1698445067850" duration="408000" />
+      <workItem from="1698445511139" duration="3510000" />
+      <workItem from="1698598112868" duration="10470000" />
     </task>
     <servers />
   </component>
@@ -349,6 +332,17 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Source/ActionRoguelike/SHelicopterSM.cpp</url>
+          <line>57</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
