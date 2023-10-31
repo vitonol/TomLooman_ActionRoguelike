@@ -12,6 +12,8 @@ class UStaticMeshComponent;
 class USpringArmComponent;
 class UCameraComponent;
 
+#define DEBUG 1;
+
 UCLASS()
 class ACTIONROGUELIKE_API ASHelicopterSM : public APawn
 {
@@ -23,41 +25,54 @@ public:
 
 protected:
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	UInputAction* MoveUpp;
+	UPROPERTY(EditAnywhere, Category="Input")
+	TSoftObjectPtr<UInputMappingContext> InputMapping;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Input")
+	UInputAction* MoveUp;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Input")
+	UInputAction* TiltRight;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Input")
+	UInputAction* TiltForward;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Input")
+	UInputAction* RotateRight;
+
 	
 	virtual void BeginPlay() override;
 
 	void OnConstruction(const FTransform& Transform) override;
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	UPROPERTY(BlueprintReadWrite)
 	FName TailRotorSocket;
+
+	UPROPERTY(BlueprintReadWrite)
+	FName RotorSocket;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	UStaticMeshComponent* MeshBody;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
-	UStaticMeshComponent* Rotor;
+	UStaticMeshComponent* MeshRotor;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
-	UStaticMeshComponent* TailRotor;
+	UStaticMeshComponent* MeshTailRotor;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
-	UStaticMeshComponent* TailBlade;
+	UStaticMeshComponent* MeshTailBlade;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
-	UStaticMeshComponent* Blade;
-
+	UStaticMeshComponent* MeshBlade;
+	
 	UPROPERTY(VisibleAnywhere)
 	USpringArmComponent* Springarm;
 
 	UPROPERTY(VisibleAnywhere)
 	UCameraComponent* Camera;
 private:
-
-	UPROPERTY(EditAnywhere, Category="Input")
-	TSoftObjectPtr<UInputMappingContext> InputMapping;
-
+	
 	UPROPERTY()
 	ASCharacter* Occupant;
 
@@ -95,19 +110,42 @@ private:
 
 	const float ThrottleUpSpeed = 200.f;
 
-	const float TurnSpeed = 0.1;
+	const float TurnSpeed = 0.3f;
 
 	const float BlurBladeSpeedThreshold = 900.f;
 
 	UPROPERTY(EditAnywhere)
 	UCurveFloat* LiftCurve;
 
+	void TickUpdate(float Delta);
+
+	void RotateBlades(float Delta);
+
+	bool bAutoDown;
+
+	float GetTurnSpeed();
+
+	float GetCurrentLift();
+
+	void UpdatePreviousValues();
+
+
 protected:
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCosmetic)
+	void LoadBlurryBladeMesh();
 
-	void MoveUp(float Value);
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCosmetic)
+	void LoadNormalBladeMesh();
 
-	void Move(const FInputActionInstance& Instance);
-	void Released(const FInputActionInstance& Instance);
+	void Climb(const FInputActionInstance& Instance);
+
+	void MoveRight(const FInputActionInstance& Instance);
+
+	void MoveForward(const FInputActionInstance& Instance);
+
+	void RotateYaw(const FInputActionInstance& Instance);
+
+	void SetBladeRotationSpeed(float Value, float DeltaTime);
 public:	
 	
 	virtual void Tick(float DeltaTime) override;
