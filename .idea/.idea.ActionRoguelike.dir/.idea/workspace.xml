@@ -8,20 +8,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3663096c-1196-4adf-b6d1-b90c0d92c637" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/Input/Look.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Input/RotateRight.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Input/TiltForward.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Input/TiltRight.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ActionRoguelike.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ActionRoguelike.dir/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SPlayerController.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SPlayerController.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ActionRoguelike/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ActionRoguelike/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/Heli/Assets/main_body.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Heli/Assets/main_body.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/Heli/BP_HelicopterSM.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Heli/BP_HelicopterSM.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/Heli/BP_SimpleCopter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Heli/BP_SimpleCopter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/Heli/Curve_Lift.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Heli/Curve_Lift.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Helipad.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Helipad.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Input/IMC.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Input/IMC.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/SHelicopterSM.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SHelicopterSM.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/SHelicopterSM.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SHelicopterSM.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

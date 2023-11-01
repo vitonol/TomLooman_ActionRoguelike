@@ -75,7 +75,10 @@ protected:
 	virtual void PostInitializeComponents() override; // a bit better way to bind events, vs constructor
 
 	
-public:	
+public:
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+	bool bPiloting;
 
 	virtual FVector GetPawnViewLocation() const override;
 	

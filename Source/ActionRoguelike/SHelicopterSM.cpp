@@ -6,9 +6,30 @@
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
 #include "Camera/CameraComponent.h"
+#include "Components/CapsuleComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "Kismet/GameplayStatics.h"
 
+
+void ASHelicopterSM::Interact_Implementation(APawn* InstigatorPawn)
+{
+		
+	ISInteractibleInterface::Interact_Implementation(InstigatorPawn);
+
+	ASCharacter* Character = Cast<ASCharacter>(InstigatorPawn);
+	Occupant = Character;
+	
+	InstigatorPawn->GetController()->Possess(this);
+	
+	UCapsuleComponent* CapsuleComponent = Occupant->GetCapsuleComponent();
+	CapsuleComponent->SetCollisionProfileName(UCollisionProfile::NoCollision_ProfileName);
+
+	Occupant->GetMesh()->SetCollisionProfileName(UCollisionProfile::NoCollision_ProfileName);
+	
+	
+	Occupant->bPiloting = true;
+	Occupant->AttachToActor(this, FAttachmentTransformRules::SnapToTargetNotIncludingScale, "pilot_seat");
+}
 
 ASHelicopterSM::ASHelicopterSM()
 {
@@ -217,10 +238,40 @@ void ASHelicopterSM::RotateYaw(const FInputActionInstance& Instance)
 {
 	float Value = Instance.GetValue().Get<float>();
 	float D = UGameplayStatics::GetWorldDeltaSeconds(this);
+	const float TurnMultiplyer = 1.2f;
 	
-	CurrentRotation = FMath::FInterpTo(CurrentRotation, Value * GetTurnSpeed(),D, 3.f );
+	CurrentRotation = FMath::FInterpTo(CurrentRotation, Value * GetTurnSpeed() * TurnMultiplyer,D, 3.f );
 
 	AddActorLocalRotation(FRotator(0, CurrentRotation, 0));
+}
+
+void ASHelicopterSM::LookAround(const FInputActionInstance& Instance)
+{
+	float D = UGameplayStatics::GetWorldDeltaSeconds(this);
+	FRotator CurrentRot = Springarm->GetRelativeRotation();
+	
+	FVector2d InputValue = Instance.GetValue().Get<FVector2d>();
+	float YawToAdd = InputValue.X * 1.5f;
+	float PitchToAdd = InputValue.Y * 1.5f;
+
+	if (FMath::IsWithin(CurrentRot.Pitch, -80.f, 80.f))
+	{
+		// FMath::GetMappedRangeValueClamped(FVector2f(0,0), FVector2f(0,0), 0);
+	
+		Springarm->AddLocalRotation(FRotator(PitchToAdd, YawToAdd, 0));
+	}
+		
+	if (FMath::IsNearlyEqual(InputValue.X, 0, 0.05) && Instance.GetTriggeredTime() >= 2.f)
+	{
+		float TargetYaw = FMath::FInterpTo(CurrentRot.Yaw, 0, D, 1.5f );
+		float TargetPitch = FMath::FInterpTo(CurrentRot.Pitch,0,D,1.5f);
+		
+		Springarm->SetRelativeRotation(FRotator(TargetPitch, TargetYaw, 0));
+	}
+	
+	FString string = "P: " + FString::SanitizeFloat(CurrentRot.Pitch);// + " Y: " + FString::SanitizeFloat(InputValue.Y);
+	GEngine->AddOnScreenDebugMessage(-1, 0.f, FColor::Yellow, string);
+	
 }
 
 void ASHelicopterSM::SetBladeRotationSpeed(float Value, float DeltaTime)
@@ -263,6 +314,8 @@ void ASHelicopterSM::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 	
 	
 	Input->BindAction(RotateRight, ETriggerEvent::Triggered, this, &ASHelicopterSM::RotateYaw);
+
+	Input->BindAction(Look, ETriggerEvent::Triggered, this, &ASHelicopterSM::LookAround);
 	
 	// PlayerInputComponent->BindAxis("MoveUp", this, &ASHelicopterSM::MoveUp);
 }

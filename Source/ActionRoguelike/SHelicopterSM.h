@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "InputMappingContext.h"
 #include "GameFramework/Pawn.h"
+#include "SInteractibleInterface.h"
 #include "SCharacter.h"
 #include "SHelicopterSM.generated.h"
 
@@ -15,9 +16,10 @@ class UCameraComponent;
 #define DEBUG 1;
 
 UCLASS()
-class ACTIONROGUELIKE_API ASHelicopterSM : public APawn
+class ACTIONROGUELIKE_API ASHelicopterSM : public APawn, public ISInteractibleInterface
 {
 	GENERATED_BODY()
+	void Interact_Implementation(APawn* InstigatorPawn) override;
 
 public:
 
@@ -39,6 +41,9 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Input")
 	UInputAction* RotateRight;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Input")
+	UInputAction* Look;
 
 	
 	virtual void BeginPlay() override;
@@ -145,7 +150,11 @@ protected:
 
 	void RotateYaw(const FInputActionInstance& Instance);
 
+	void LookAround(const FInputActionInstance& Instance);
+
 	void SetBladeRotationSpeed(float Value, float DeltaTime);
+
+	
 public:	
 	
 	virtual void Tick(float DeltaTime) override;
