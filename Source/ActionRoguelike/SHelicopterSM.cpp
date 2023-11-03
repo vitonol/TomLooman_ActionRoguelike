@@ -61,15 +61,16 @@ ASHelicopterSM::ASHelicopterSM()
 	Camera = CreateDefaultSubobject<UCameraComponent>("Camera");
 	Camera->SetupAttachment(Springarm);
 
-	Springarm->SetRelativeLocation(FVector(0,0,220));
-	Camera->SetRelativeRotation(FRotator(-20.f, 0,0));
+	// Springarm->SetRelativeLocation(FVector(0,0,220));
+	// Camera->SetRelativeRotation(FRotator(-20.f, 0,0));
+	// Springarm->SocketOffset = FVector(0,0,500.f);
+	
 	Springarm->TargetArmLength = 1200.f;
 	Springarm->bInheritPitch = false;
 	Springarm->bEnableCameraLag = true;
 	Springarm->CameraLagSpeed = 4.f;
 	Springarm->bEnableCameraRotationLag = true;
 	Springarm->CameraRotationLagSpeed = 5.f;
-	Springarm->SocketOffset = FVector(0,0,500.f);
 		
 	SetReplicates(true);
 }
@@ -100,6 +101,11 @@ void ASHelicopterSM::BeginPlay()
 			}
 		}
 	}
+}
+
+float ASHelicopterSM::GetBladeRotationSpeed()
+{
+	return CurrentBladeRotationSpeed;
 }
 
 void ASHelicopterSM::TickUpdate(float Delta)
@@ -254,12 +260,11 @@ void ASHelicopterSM::LookAround(const FInputActionInstance& Instance)
 	float YawToAdd = InputValue.X * 1.5f;
 	float PitchToAdd = InputValue.Y * 1.5f;
 
-	if (FMath::IsWithin(CurrentRot.Pitch, -80.f, 80.f))
+	if (!FMath::IsWithin(CurrentRot.Pitch, -40.f, 40.f))
 	{
-		// FMath::GetMappedRangeValueClamped(FVector2f(0,0), FVector2f(0,0), 0);
-	
-		Springarm->AddLocalRotation(FRotator(PitchToAdd, YawToAdd, 0));
+		PitchToAdd = 0;
 	}
+	Springarm->AddLocalRotation(FRotator(PitchToAdd, YawToAdd, 0));
 		
 	if (FMath::IsNearlyEqual(InputValue.X, 0, 0.05) && Instance.GetTriggeredTime() >= 2.f)
 	{
@@ -271,13 +276,17 @@ void ASHelicopterSM::LookAround(const FInputActionInstance& Instance)
 	
 	FString string = "P: " + FString::SanitizeFloat(CurrentRot.Pitch);// + " Y: " + FString::SanitizeFloat(InputValue.Y);
 	GEngine->AddOnScreenDebugMessage(-1, 0.f, FColor::Yellow, string);
-	
 }
 
 void ASHelicopterSM::SetBladeRotationSpeed(float Value, float DeltaTime)
 {
 	float ValueToClamp = (Value * DeltaTime * ThrottleUpSpeed) + TargetBladeRotationSpeed;
 	TargetBladeRotationSpeed = FMath::Clamp(ValueToClamp ,0.f, MaxBladeRotationSpeed);
+}
+
+float ASHelicopterSM::GetForwardSpeedMPH() const
+{
+	return ForwardSpeed * 2236.94185f / 100000.f;
 }
 
 void ASHelicopterSM::Tick(float DeltaTime)
@@ -292,6 +301,10 @@ void ASHelicopterSM::Tick(float DeltaTime)
 	{
 		SetBladeRotationSpeed(-0.2f, DeltaTime);
 	}
+
+	WorldTransform = GetActorTransform();
+	ForwardAxis = WorldTransform.GetUnitAxis(EAxis::X);
+	ForwardSpeed = FVector::DotProduct(Velocity, ForwardAxis);
 	
 	FString string = "Blade Speed: " + FString::SanitizeFloat(TargetBladeRotationSpeed);
 	GEngine->AddOnScreenDebugMessage(-1, 0.f, FColor::White, string);
@@ -318,5 +331,16 @@ void ASHelicopterSM::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 	Input->BindAction(Look, ETriggerEvent::Triggered, this, &ASHelicopterSM::LookAround);
 	
 	// PlayerInputComponent->BindAxis("MoveUp", this, &ASHelicopterSM::MoveUp);
+}
+
+void ASHelicopterSM::PossessedBy(AController* NewController)
+{
+	Super::PossessedBy(NewController);
+	OnPlayerEnterChopper.Broadcast();
+}
+
+void ASHelicopterSM::UnPossessed()
+{
+	Super::UnPossessed();
 }
 

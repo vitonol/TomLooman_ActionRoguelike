@@ -15,6 +15,10 @@ class UCameraComponent;
 
 #define DEBUG 1;
 
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnPlayerEnterChopper);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnPlayerExitChopper);
+
+
 UCLASS()
 class ACTIONROGUELIKE_API ASHelicopterSM : public APawn, public ISInteractibleInterface
 {
@@ -24,8 +28,27 @@ class ACTIONROGUELIKE_API ASHelicopterSM : public APawn, public ISInteractibleIn
 public:
 
 	ASHelicopterSM();
+	
+	UPROPERTY(BlueprintAssignable)
+	FOnPlayerEnterChopper OnPlayerEnterChopper;
+
+	UPROPERTY(BlueprintAssignable)
+	FOnPlayerExitChopper OnPlayerExitChopper;
+
+	//~ Begin APawn Interface
+	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	virtual void PossessedBy(AController* NewController) override;
+	virtual void UnPossessed() override;
+	//~ End APawn Interface
+
+	//~ Begin AActor Interface
+	virtual void BeginPlay() override;
+	virtual void Tick(float DeltaTime) override;
+	//~ End AActor Interface
 
 protected:
+
+	void OnConstruction(const FTransform& Transform) override;
 
 	UPROPERTY(EditAnywhere, Category="Input")
 	TSoftObjectPtr<UInputMappingContext> InputMapping;
@@ -44,12 +67,7 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Input")
 	UInputAction* Look;
-
 	
-	virtual void BeginPlay() override;
-
-	void OnConstruction(const FTransform& Transform) override;
-
 	UPROPERTY(BlueprintReadWrite)
 	FName TailRotorSocket;
 
@@ -87,33 +105,28 @@ private:
 	UPROPERTY()
 	float CurrentBladeRotationSpeed;
 
-	UPROPERTY()
+	UFUNCTION(BlueprintCallable, BlueprintPure)
+	float GetBladeRotationSpeed();
+
 	FVector Velocity;
-
-	UPROPERTY()
 	FVector Acceleration;
-
-	UPROPERTY()
 	FVector PrevVelocity;
-
-	UPROPERTY()
 	FVector PrevAcceleration;
-
-	UPROPERTY()
 	FVector PrevPosition;
 
-	UPROPERTY()
+	FVector ForwardAxis;
+
+	FTransform WorldTransform;
+
 	float CurrentTurn;
-
-	UPROPERTY()
 	float CurrentPitch;
-
-	UPROPERTY()
 	float CurrentRotation;
+	float ForwardSpeed;
 
+	
 	const float MaxBladeRotationSpeed = 1500.f;
 
-	const float ThrottleUpSpeed = 200.f;
+	const float ThrottleUpSpeed = 250.f;
 
 	const float TurnSpeed = 0.3f;
 
@@ -134,7 +147,6 @@ private:
 
 	void UpdatePreviousValues();
 
-
 protected:
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCosmetic)
 	void LoadBlurryBladeMesh();
@@ -154,11 +166,8 @@ protected:
 
 	void SetBladeRotationSpeed(float Value, float DeltaTime);
 
-	
-public:	
-	
-	virtual void Tick(float DeltaTime) override;
-
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	public:
+	UFUNCTION(BlueprintCallable)
+	float GetForwardSpeedMPH() const;
 
 };
