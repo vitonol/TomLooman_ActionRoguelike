@@ -19,6 +19,15 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnPlayerEnterChopper);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnPlayerExitChopper);
 
 
+UENUM()
+enum class EChoppperState : uint32
+{
+	Off = 0,
+	Startup = 1,
+	Idle = 2,
+	Flying = 3
+};
+
 UCLASS()
 class ACTIONROGUELIKE_API ASHelicopterSM : public APawn, public ISInteractibleInterface
 {
@@ -28,7 +37,9 @@ class ACTIONROGUELIKE_API ASHelicopterSM : public APawn, public ISInteractibleIn
 public:
 
 	ASHelicopterSM();
-	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Status")
+	EChoppperState ChopperState = EChoppperState::Off;
+		
 	UPROPERTY(BlueprintAssignable)
 	FOnPlayerEnterChopper OnPlayerEnterChopper;
 
@@ -122,11 +133,10 @@ private:
 	float CurrentPitch;
 	float CurrentRotation;
 	float ForwardSpeed;
-
 	
-	const float MaxBladeRotationSpeed = 1500.f;
+	const float MaxBladeRotationSpeed = 1600.f;
 
-	const float ThrottleUpSpeed = 250.f;
+	const float ThrottleUpSpeed = 300.f;
 
 	const float TurnSpeed = 0.3f;
 
@@ -141,11 +151,15 @@ private:
 
 	bool bAutoDown;
 
+	bool bStartingUp;
+
 	float GetTurnSpeed();
 
 	float GetCurrentLift();
 
 	void UpdatePreviousValues();
+
+	void UpdateState(float Delta);
 
 protected:
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCosmetic)
@@ -155,7 +169,7 @@ protected:
 	void LoadNormalBladeMesh();
 
 	void Climb(const FInputActionInstance& Instance);
-
+		
 	void MoveRight(const FInputActionInstance& Instance);
 
 	void MoveForward(const FInputActionInstance& Instance);
@@ -165,9 +179,5 @@ protected:
 	void LookAround(const FInputActionInstance& Instance);
 
 	void SetBladeRotationSpeed(float Value, float DeltaTime);
-
-	public:
-	UFUNCTION(BlueprintCallable)
-	float GetForwardSpeedMPH() const;
-
+	
 };

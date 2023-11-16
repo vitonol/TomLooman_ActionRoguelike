@@ -20,6 +20,9 @@ class ACTIONROGUELIKE_API USAction : public UObject
 
 protected:
 
+	UPROPERTY(Replicated)
+	USActionComponent* ActionComp;
+
 	UPROPERTY(EditDefaultsOnly, Category = "Tags")
 	FGameplayTagContainer GrantsTags;
 
@@ -29,9 +32,15 @@ protected:
 	UFUNCTION(BlueprintCallable, Category="Action")
 	USActionComponent* GetOwningComponent() const;
 
+	UPROPERTY(ReplicatedUsing="OnRep_IsRunning")
 	bool bIsRunning;
+
+	UFUNCTION()
+	void OnRep_IsRunning();
 	
 public:
+
+	void Initialize(USActionComponent* NewActionComp);
 
 	UPROPERTY(EditDefaultsOnly, Category="Action")
 	bool bAutoStart;
@@ -47,7 +56,6 @@ public:
 
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category="Action")
 	void StopAction(AActor* Instigator);
-
 	
 	/* // FText only for front facing (because it can be localzed, Fstring is mostly for debugging
 	 * FName is hashed and allows for fast comparison.
@@ -56,5 +64,9 @@ public:
 	FName ActionName;
 	
 	UWorld* GetWorld() const override;
-	 
+
+	bool IsSupportedForNetworking() const override
+	{
+		return true;
+	}
 };

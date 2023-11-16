@@ -52,11 +52,12 @@ protected:
 	
 	virtual void BeginPlay() override;
 
-	UPROPERTY()   // whenever we are dealing with poiters or memery Uproperty is useful to let UE know that there some memomery to keep in mind  
+	UPROPERTY(Replicated)   // whenever we are dealing with poiters or memery Uproperty is useful to let UE know that there some memomery to keep in mind  
 	TArray<USAction*> Actions;
 
 public:	
+	bool ReplicateSubobjects(class UActorChannel *Channel, class FOutBunch *Bunch, FReplicationFlags *RepFlags) override;
+	
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
-		
 };

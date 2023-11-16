@@ -3,8 +3,10 @@
 
 #include "SHelicopterSM.h"
 
+#include "ActionRoguelike.h"
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
+#include "SPlayerController.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "GameFramework/SpringArmComponent.h"
@@ -177,6 +179,7 @@ void ASHelicopterSM::UpdatePreviousValues()
 	PrevAcceleration = Acceleration;
 }
 
+
 void ASHelicopterSM::Climb(const FInputActionInstance& Instance)
 {
 	float PressTime = Instance.GetTriggeredTime();
@@ -187,17 +190,24 @@ void ASHelicopterSM::Climb(const FInputActionInstance& Instance)
 		const float D = UGameplayStatics::GetWorldDeltaSeconds(this);
 		SetBladeRotationSpeed(Value, D);
 
-		if (bAutoDown) bAutoDown = false;
+		if (ChopperState!=EChoppperState::Flying) ChopperState = EChoppperState::Flying;
 	}
+	
 	else
 	{
-		bAutoDown = true;
+		ChopperState = EChoppperState::Idle;
+		// bAutoDown = true;
 	}
 }
+
 
 void ASHelicopterSM::MoveRight(const FInputActionInstance& Instance)
 {
 	float Value = Instance.GetValue().Get<float>();
+	if (Value !=0 && ChopperState != EChoppperState::Flying)
+	{
+		 ChopperState = EChoppperState::Flying;
+	}
 	float D = UGameplayStatics::GetWorldDeltaSeconds(this);
 
 	float LerpSpeed = FMath::IsNearlyEqual(Value, 0.f, 0.05f) ? 2.f : 3.f;
@@ -214,6 +224,12 @@ void ASHelicopterSM::MoveForward(const FInputActionInstance& Instance)
 {
 	float Value = Instance.GetValue().Get<float>();
 	Value = Value * (-1);
+
+	if (Value != 0 && ChopperState != EChoppperState::Flying)
+	{
+		ChopperState = EChoppperState::Flying;
+	}
+	
 	float D = UGameplayStatics::GetWorldDeltaSeconds(this);
 
 	float LerpSpeed = 5.f; //FMath::IsNearlyEqual(Value, 0.f, 0.05f) ? 2.f : 5.f;
@@ -222,7 +238,7 @@ void ASHelicopterSM::MoveForward(const FInputActionInstance& Instance)
 	// FMath::InterpEaseOut(CurrentPitch, Value * GetTurnSpeed(), D, LerpSpeed);
 
 	const float TargetPitch = CurrentPitch + GetActorRotation().Pitch;
-	if (FMath::IsWithin(TargetPitch, -75.f, 75.f))
+	if (FMath::IsWithin(TargetPitch, -70.f, 70.f))
 	{
 		AddActorLocalRotation(FRotator(CurrentPitch, 0, 0 ));
 	}
@@ -237,7 +253,7 @@ void ASHelicopterSM::MoveForward(const FInputActionInstance& Instance)
 		SetActorRotation(FRotator(ReturnPitch, ActorRotation.Yaw, ActorRotation.Roll));
 	}
 	
-	GEngine->AddOnScreenDebugMessage(-1, 0.f, FColor::Green, FString::Printf(TEXT("Value: %f"), TargetPitch ));
+	// GEngine->AddOnScreenDebugMessage(-1, 0.f, FColor::Green, FString::Printf(TEXT("Value: %f"), TargetPitch ));
 }
 
 void ASHelicopterSM::RotateYaw(const FInputActionInstance& Instance)
@@ -274,8 +290,8 @@ void ASHelicopterSM::LookAround(const FInputActionInstance& Instance)
 		Springarm->SetRelativeRotation(FRotator(TargetPitch, TargetYaw, 0));
 	}
 	
-	FString string = "P: " + FString::SanitizeFloat(CurrentRot.Pitch);// + " Y: " + FString::SanitizeFloat(InputValue.Y);
-	GEngine->AddOnScreenDebugMessage(-1, 0.f, FColor::Yellow, string);
+	// FString string = "P: " + FString::SanitizeFloat(CurrentRot.Pitch);// + " Y: " + FString::SanitizeFloat(InputValue.Y);
+	// GEngine->AddOnScreenDebugMessage(-1, 0.f, FColor::Yellow, string);
 }
 
 void ASHelicopterSM::SetBladeRotationSpeed(float Value, float DeltaTime)
@@ -284,10 +300,6 @@ void ASHelicopterSM::SetBladeRotationSpeed(float Value, float DeltaTime)
 	TargetBladeRotationSpeed = FMath::Clamp(ValueToClamp ,0.f, MaxBladeRotationSpeed);
 }
 
-float ASHelicopterSM::GetForwardSpeedMPH() const
-{
-	return ForwardSpeed * 2236.94185f / 100000.f;
-}
 
 void ASHelicopterSM::Tick(float DeltaTime)
 {
@@ -297,17 +309,47 @@ void ASHelicopterSM::Tick(float DeltaTime)
 
 	RotateBlades(DeltaTime);
 
-	if (bAutoDown)
-	{
-		SetBladeRotationSpeed(-0.2f, DeltaTime);
-	}
-
+	UpdateState(DeltaTime);
+	
 	WorldTransform = GetActorTransform();
 	ForwardAxis = WorldTransform.GetUnitAxis(EAxis::X);
 	ForwardSpeed = FVector::DotProduct(Velocity, ForwardAxis);
 	
 	FString string = "Blade Speed: " + FString::SanitizeFloat(TargetBladeRotationSpeed);
-	GEngine->AddOnScreenDebugMessage(-1, 0.f, FColor::White, string);
+	LogOnScreen(this,string, FColor::White, 0.f);
+	
+	FString mess = "State: " + FString::FromInt((int)ChopperState);
+
+	// const UEnum* StateEnum = FindObject<UEnum>(ANY_PACKAGE, TEXT("EChoppperState"));
+	
+	LogOnScreen(this, mess, FColor::Purple, 0.f);
+	
+}
+
+void ASHelicopterSM::UpdateState(float Delta)
+{
+	switch (ChopperState)
+	{
+		case EChoppperState::Off :
+		case EChoppperState::Flying :
+
+		case EChoppperState::Idle :
+		SetBladeRotationSpeed(-0.05f, Delta);
+		break;
+
+	case EChoppperState::Startup:
+		if (CurrentBladeRotationSpeed <= 820.f)
+		{
+			SetBladeRotationSpeed(0.4f, Delta);
+		}
+		else ChopperState = EChoppperState::Idle;
+		break;
+	}
+	
+	// if (CurrentBladeRotationSpeed == 0.f)
+	// {
+	// 	ChopperState = EChoppperState::Off;
+	// }
 }
 
 void ASHelicopterSM::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
@@ -337,7 +379,13 @@ void ASHelicopterSM::PossessedBy(AController* NewController)
 {
 	Super::PossessedBy(NewController);
 	OnPlayerEnterChopper.Broadcast();
+
+	if (ASPlayerController* PC = Cast<ASPlayerController>(NewController))
+	{
+		ChopperState = EChoppperState::Startup;
+	}
 }
+
 
 void ASHelicopterSM::UnPossessed()
 {

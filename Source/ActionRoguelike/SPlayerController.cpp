@@ -17,7 +17,7 @@ void ASPlayerController::BeginPlay()
 
 void ASPlayerController::Tick(float DeltaSeconds)
 {
-	Camera->AddActorLocalRotation(FRotator(10,0,0));
+	// Camera->AddActorLocalRotation(FRotator(10,0,0));
 
 	Super::Tick(DeltaSeconds);
 }
