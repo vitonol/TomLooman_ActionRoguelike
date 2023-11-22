@@ -38,7 +38,6 @@ void USActionComponent::ServerStopAction_Implementation(AActor* Instigator, FNam
 	StopActionByName(Instigator, ActionName);
 }
 
-
 void USActionComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
@@ -64,6 +63,14 @@ void USActionComponent::TickComponent(float DeltaTime, ELevelTick TickType, FAct
 void USActionComponent::AddAction(AActor* Instigator, TSubclassOf<USAction> ActionClass)
 {
 	if(! ensure(ActionClass)) return;
+
+	// Skip for clients
+	if (!GetOwner()->HasAuthority())
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Client attempting to AddAction. [Class: %s]"), *GetNameSafe(ActionClass));
+		return;
+	}
+	
 	if (USAction* NewAction = NewObject<USAction>(GetOwner(), ActionClass)) // outer is whover owns this objecft
 	{
 		NewAction->Initialize(this);

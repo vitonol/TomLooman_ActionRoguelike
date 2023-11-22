@@ -11,27 +11,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0406d380-ba0d-48da-8b82-39f396c20617" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Actions/BP_ActionMultiplayerTest.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Audio/Chopper/MS_Experiment.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/NewHapticFeedbackEffect_Curve.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Audio/Chopper/MS_.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Audio/Submixes/BitCrusher.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Audio/Submixes/NewSoundEffectSourcePreset.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ActionRoguelike.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ActionRoguelike.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ActionRoguelike/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ActionRoguelike/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/AI/BP_MinionRanged.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/AI/BP_MinionRanged.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/Audio/Chopper/BP_ChopperAudioComponent.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Audio/Chopper/BP_ChopperAudioComponent.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/Audio/Chopper/ChopperLoopHigh.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Audio/Chopper/ChopperLoopHigh.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/Audio/Chopper/MotoSynth/Moto_Preset.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Audio/Chopper/MotoSynth/Moto_Preset.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/BP_PlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/BP_PlayerCharacter.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/BP_PlayerController.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/BP_PlayerController.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/BP_TargetDummy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/BP_TargetDummy.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/Heli/Assets/Textures/M_Body.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Heli/Assets/Textures/M_Body.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/Heli/BP_Chopper.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Heli/BP_Chopper.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/Maps/TestLevel.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Maps/TestLevel.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/UI/WBP_PlayerHealth.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/UI/WBP_PlayerHealth.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Helipad.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Helipad.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/ActionRoguelike.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/ActionRoguelike.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/SAction.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SAction.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/SAction.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SAction.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/SActionComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SActionComponent.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/SActionComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SActionComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/SHelicopterSM.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SHelicopterSM.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/SHelicopterSM.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SHelicopterSM.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/SAction_ProjectileAttack.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SAction_ProjectileAttack.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/SAttributeComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SAttributeComponent.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/SPlayerController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SPlayerController.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/SPlayerController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SPlayerController.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -357,7 +356,9 @@
       <workItem from="1699296637063" duration="2653000" />
       <workItem from="1700013452758" duration="778000" />
       <workItem from="1700151992437" duration="8445000" />
-      <workItem from="1700162636139" duration="3007000" />
+      <workItem from="1700162636139" duration="5960000" />
+      <workItem from="1700513070399" duration="5024000" />
+      <workItem from="1700580151270" duration="3837000" />
     </task>
     <servers />
   </component>

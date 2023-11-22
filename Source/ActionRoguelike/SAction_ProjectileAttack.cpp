@@ -24,11 +24,14 @@ void USAction_ProjectileAttack::StartAction_Implementation(AActor* Instigaor)
 			UGameplayStatics::SpawnEmitterAttached(CastingEffect, Char->GetMesh(), HandSocketName, FVector::ZeroVector,
 							FRotator::ZeroRotator,EAttachLocation::SnapToTarget, true, EPSCPoolMethod::AutoRelease);
 
-			FTimerHandle TimerHandle_AttackAnimDelay;
-			FTimerDelegate Delegate;
-			Delegate.BindUFunction(this,"AttackDelay_Elapsed", Char);
+			if (Char->HasAuthority())
+			{
+				FTimerHandle TimerHandle_AttackAnimDelay;
+				FTimerDelegate Delegate;
+				Delegate.BindUFunction(this,"AttackDelay_Elapsed", Char);
 
-			GetWorld()->GetTimerManager().SetTimer(TimerHandle_AttackAnimDelay, Delegate, AttackAnimDelay, false);
+				GetWorld()->GetTimerManager().SetTimer(TimerHandle_AttackAnimDelay, Delegate, AttackAnimDelay, false);
+			}
 		}
 	}
 }
@@ -72,7 +75,7 @@ void USAction_ProjectileAttack::AttackDelay_Elapsed(ASCharacter* InstigatorChara
 		FRotator ProjRotation = FRotationMatrix::MakeFromX(TraceEnd - HandLocation).Rotator();
 		
 		FTransform SpawnTM = FTransform(ProjRotation, HandLocation);
-		GetWorld()->SpawnActor<AActor>(ProjectileClass, SpawnTM, SpawnParams);
+		GetWorld()->SpawnActor<AActor>(ProjectileClass, SpawnTM, SpawnParams);  
 	}
 
 	StopAction(InstigatorCharacter);

@@ -21,3 +21,9 @@ void ASPlayerController::Tick(float DeltaSeconds)
 
 	Super::Tick(DeltaSeconds);
 }
+
+void ASPlayerController::SetPawn(APawn* InPawn)
+{
+	Super::SetPawn(InPawn);
+	OnPawnChanged.Broadcast(InPawn);
+}

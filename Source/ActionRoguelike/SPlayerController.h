@@ -9,6 +9,10 @@
 /**
  * 
  */
+
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnPawnChanged, APawn*, NewPawn);
+
+
 UCLASS()
 class ACTIONROGUELIKE_API ASPlayerController : public APlayerController
 {
@@ -20,5 +24,10 @@ protected:
 	APlayerCameraManager* Camera;
 
 	void Tick(float DeltaSeconds) override;
+
+	UPROPERTY(Blueprintable)
+	FOnPawnChanged OnPawnChanged;
+
+	virtual void SetPawn(APawn* InPawn) override;
 	
 };

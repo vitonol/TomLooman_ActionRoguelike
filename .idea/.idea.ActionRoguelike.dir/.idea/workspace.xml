@@ -8,28 +8,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3663096c-1196-4adf-b6d1-b90c0d92c637" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Actions/BP_ActionMultiplayerTest.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Audio/Chopper/MS_Experiment.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/NewHapticFeedbackEffect_Curve.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Audio/Chopper/MS_.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Audio/Submixes/BitCrusher.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Audio/Submixes/NewSoundEffectSourcePreset.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ActionRoguelike.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ActionRoguelike.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ActionRoguelike/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ActionRoguelike/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/AI/BP_MinionRanged.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/AI/BP_MinionRanged.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/Audio/Chopper/BP_ChopperAudioComponent.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Audio/Chopper/BP_ChopperAudioComponent.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/Audio/Chopper/MotoSynth/Cureves/RPM_A.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Audio/Chopper/MotoSynth/Cureves/RPM_A.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/Audio/Chopper/ChopperLoopHigh.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Audio/Chopper/ChopperLoopHigh.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/Audio/Chopper/MotoSynth/Moto_Preset.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Audio/Chopper/MotoSynth/Moto_Preset.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/BP_PlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/BP_PlayerCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/BP_PlayerController.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/BP_PlayerController.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/BP_TargetDummy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/BP_TargetDummy.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/Heli/Assets/Textures/M_Body.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Heli/Assets/Textures/M_Body.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/Heli/BP_Chopper.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Heli/BP_Chopper.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/ActionRoguelike/Maps/TestLevel.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ActionRoguelike/Maps/TestLevel.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Helipad.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Helipad.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/ActionRoguelike.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/ActionRoguelike.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/SAction.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SAction.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/SAction.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SAction.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/SActionComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SActionComponent.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/SActionComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SActionComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/SHelicopterSM.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SHelicopterSM.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/SHelicopterSM.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SHelicopterSM.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/SPlayerController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SPlayerController.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/SAction_ProjectileAttack.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SAction_ProjectileAttack.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/SAttributeComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/SAttributeComponent.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +34,7 @@
     <setting file="file://C:/Program Files/Epic Games/UE_5.2/Engine/Source/Runtime/Engine/Private/Curves/CurveFloat.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Epic Games/UE_5.2/Engine/Source/Runtime/Engine/Private/GameplayStatics.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Epic Games/UE_5.2/Engine/Source/Runtime/Engine/Private/KismetSystemLibrary.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://C:/Program Files/Epic Games/UE_5.3/Engine/Source/Developer/GraphColor/Private/graphUtils.cpp" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -158,6 +151,8 @@
       <workItem from="1700162347960" duration="4000" />
       <workItem from="1700162363424" duration="250000" />
       <workItem from="1700164147003" duration="31000" />
+      <workItem from="1700168984576" duration="1931000" />
+      <workItem from="1700530031235" duration="694000" />
     </task>
     <servers />
   </component>
