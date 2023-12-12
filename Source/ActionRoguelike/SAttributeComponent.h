@@ -55,6 +55,9 @@ protected:
 	UFUNCTION(NetMulticast, Reliable) //@TODO Fixme:  should be Unreliable because it is cosmetic
 	void MulticastHealthChanged(AActor* Instigator,  float NewHealth, float Delta);
 	
+	UFUNCTION(NetMulticast, Unreliable) 
+	void MulticastRageChanged(AActor* Instigator,  float NewRage, float Delta);
+	
 public:
 
 	UFUNCTION(Exec)

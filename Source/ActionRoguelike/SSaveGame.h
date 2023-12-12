@@ -81,6 +81,9 @@ public:
 	UPROPERTY()
 	TArray<FPlayerSaveData> SavedPlayers;
 
+	UPROPERTY()
+	int32 Credits;
+
 	/* Actors stored from a level (currently does not support a specific level and just assumes the demo map) */
 	UPROPERTY()
 	TArray<FActorSaveData> SavedActors;

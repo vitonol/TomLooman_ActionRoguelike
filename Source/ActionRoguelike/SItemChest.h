@@ -12,13 +12,16 @@ class ACTIONROGUELIKE_API ASItemChest : public AActor, public ISInteractibleInte
 {
 	GENERATED_BODY()
 	void Interact_Implementation(APawn* InstigatorPawn) override; // Because Interact is BlueprintNativeEvent it requires _Implementation
+
+	void OnActorLoaded_Implementation();
+	
 public:	
 	// Sets default values for this actor's properties
 	ASItemChest();
 
 protected:
 
-	UPROPERTY(ReplicatedUsing="OnRep_LidOpend", BlueprintReadOnly) // RepNotify
+	UPROPERTY(ReplicatedUsing="OnRep_LidOpend", BlueprintReadOnly, SaveGame) // RepNotify
 	bool bLidOpened;
 
 	UFUNCTION()

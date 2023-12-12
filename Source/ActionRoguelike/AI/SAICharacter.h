@@ -60,8 +60,7 @@ protected:
 
 	UFUNCTION(NetMulticast, Unreliable)
 	void MulticastPawnSeen();
-
-
+	
 	AActor* GetTargetActor() const;
 
 	UFUNCTION()

@@ -29,6 +29,11 @@ void ASItemChest::Interact_Implementation(APawn* InstigatorPawn)
 	OnRep_LidOpend(); // need to manually call on the server
 }
 
+void ASItemChest::OnActorLoaded_Implementation()
+{
+	OnRep_LidOpend();
+}
+
 void ASItemChest::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);

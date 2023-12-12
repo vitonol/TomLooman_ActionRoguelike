@@ -26,7 +26,7 @@ protected:
 
 	UPROPERTY(EditDefaultsOnly, ReplicatedUsing="OnRep_Credits", Category = "Credits")
 	int32 Credits;
-
+	
 	UPROPERTY(BlueprintReadOnly)
 	float PersonalRecordTime;
 

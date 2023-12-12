@@ -21,6 +21,17 @@ protected:
 	
 	void BeginPlay() override;
 
+	UPROPERTY(EditDefaultsOnly, Category="UI")
+	TSubclassOf<UUserWidget> PauseMenuClass;
+
+	UPROPERTY()
+	UUserWidget* PauseMenuInstance;
+
+	UFUNCTION(BlueprintCallable)
+	void TogglePauseMenu();
+
+	void SetupInputComponent() override;
+
 	APlayerCameraManager* Camera;
 
 	void Tick(float DeltaSeconds) override;
@@ -29,5 +40,10 @@ protected:
 	FOnPawnChanged OnPawnChanged;
 
 	virtual void SetPawn(APawn* InPawn) override;
+
+	virtual void BeginPlayingState() override;
+
+	UFUNCTION(BlueprintImplementableEvent)
+	void BPBEginPlayeingState();
 	
 };

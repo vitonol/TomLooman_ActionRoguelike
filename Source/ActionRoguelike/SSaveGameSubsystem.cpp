@@ -140,7 +140,7 @@ void USSaveGameSubsystem::WriteSaveGame()
 
 	UGameplayStatics::SaveGameToSlot(CurrentSaveGame, CurrentSlotName, 0);
 
-	OnSaveGameWritten.Broadcast(CurrentSaveGame);
+	// OnSaveGameWritten.Broadcast(CurrentSaveGame);
 }
 
 
@@ -191,7 +191,7 @@ void USSaveGameSubsystem::LoadSaveGame(FString InSlotName /*= ""*/)
 			}
 		}
 
-		OnSaveGameLoaded.Broadcast(CurrentSaveGame);
+		// OnSaveGameLoaded.Broadcast(CurrentSaveGame);
 	}
 	else
 	{

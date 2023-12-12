@@ -23,6 +23,11 @@ void USAttributeComponent::MulticastHealthChanged_Implementation(AActor* Instiga
 	OnHealthChanged.Broadcast(Instigator, this, NewHealth, Delta); // Fire and forget, while Health var is still replicated
 }
 
+void USAttributeComponent::MulticastRageChanged_Implementation(AActor* Instigator, float NewRage, float Delta)
+{
+	
+}
+
 bool USAttributeComponent::Kill(AActor* Instigator)
 {
 	return ApplyHealthChange(Instigator, -GetHealthMax());

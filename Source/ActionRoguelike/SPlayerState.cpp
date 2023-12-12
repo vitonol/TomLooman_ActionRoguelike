@@ -9,7 +9,6 @@
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(SPlayerState)
 
-
 void ASPlayerState::AddCredits(int32 Delta)
 {
 	// Avoid user-error of adding a negative amount
@@ -22,7 +21,6 @@ void ASPlayerState::AddCredits(int32 Delta)
 
 	OnCreditsChanged.Broadcast(this, Credits, Delta);
 }
-
 
 bool ASPlayerState::RemoveCredits(int32 Delta)
 {
@@ -45,7 +43,6 @@ bool ASPlayerState::RemoveCredits(int32 Delta)
 	return true;
 }
 
-
 bool ASPlayerState::UpdatePersonalRecord(float NewTime)
 {
 	// Higher time is better
@@ -63,69 +60,68 @@ bool ASPlayerState::UpdatePersonalRecord(float NewTime)
 	return false;
 }
 
-
-void ASPlayerState::SavePlayerState_Implementation(USSaveGame* SaveObject)
+void ASPlayerState:: SavePlayerState_Implementation(USSaveGame* SaveObject)
 {
 	if (SaveObject)
 	{
 		// Gather all relevant data for player
-		FPlayerSaveData SaveData;
-		SaveData.Credits = Credits;
-		SaveData.PersonalRecordTime = PersonalRecordTime;
-		// Stored as FString for simplicity (original Steam ID is uint64)
-		SaveData.PlayerID = GetUniqueId().ToString();
-
-		// May not be alive while we save
-		if (APawn* MyPawn = GetPawn())
-		{
-			SaveData.Location = MyPawn->GetActorLocation();
-			SaveData.Rotation = MyPawn->GetActorRotation();
-			SaveData.bResumeAtTransform = true;
-		}
+		// FPlayerSaveData SaveData;
+		// SaveData.Credits = Credits;
+		// SaveData.PersonalRecordTime = PersonalRecordTime;
+		// // Stored as FString for simplicity (original Steam ID is uint64)
+		// SaveData.PlayerID = GetUniqueId().ToString();
+		//
+		// // May not be alive while we save
+		// if (APawn* MyPawn = GetPawn())
+		// {
+		// 	SaveData.Location = MyPawn->GetActorLocation();
+		// 	SaveData.Rotation = MyPawn->GetActorRotation();
+		// 	SaveData.bResumeAtTransform = true;
+		// }
 		
-		SaveObject->SavedPlayers.Add(SaveData);
+		// SaveObject->SavedPlayers.Add(SaveData);
+		SaveObject->Credits = Credits;
 	}
 }
-
 
 void ASPlayerState::LoadPlayerState_Implementation(USSaveGame* SaveObject)
 {
 	if (SaveObject)
 	{
-		FPlayerSaveData* FoundData = SaveObject->GetPlayerData(this);
-		if (FoundData)
-		{
-			//Credits = SaveObject->Credits;
-			// Makes sure we trigger credits changed event
-			AddCredits(FoundData->Credits);
+		// FPlayerSaveData* FoundData = SaveObject->GetPlayerData(this);
+		// if (FoundData)
+		// {
+		// 	//Credits = SaveObject->Credits;
+		// 	// Makes sure we trigger credits changed event
+		// 	AddCredits(FoundData->Credits);
+		//
+		// 	PersonalRecordTime = FoundData->PersonalRecordTime;
+		// }
+		// else
+		// {
+		// 	// UE_LOGFMT(LogGame, Warning, "Could not find SaveGame data for player id: {playerid}.", GetPlayerId());
+		// }
 
-			PersonalRecordTime = FoundData->PersonalRecordTime;
-		}
-		else
-		{
-			// UE_LOGFMT(LogGame, Warning, "Could not find SaveGame data for player id: {playerid}.", GetPlayerId());
-		}
+		// Credits = SaveObject->Credits;
+
+		AddCredits(SaveObject->Credits);		
 	}
 }
-
 
 void ASPlayerState::OnRep_Credits(int32 OldCredits)
 {
 	OnCreditsChanged.Broadcast(this, Credits, Credits - OldCredits);
 }
 
-
 // void ASPlayerState::MulticastCredits_Implementation(float NewCredits, float Delta)
 // {
 // 	OnCreditsChanged.Broadcast(this, NewCredits, Delta);
 // }
 
-
 int32 ASPlayerState::GetCredits() const
 {
 	return Credits;
 }
-
 
 void ASPlayerState::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
 {

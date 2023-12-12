@@ -8,8 +8,6 @@
 
 class USSaveGame;
 
-DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnSaveGameSignature, class USSaveGame*, SaveObject);
-
 /**
  * Handles all saving/loading of game state and player data including transform
  */
@@ -44,12 +42,6 @@ public:
 
 	/* Load from disk, optional slot name */
 	void LoadSaveGame(FString InSlotName = "");
-
-	UPROPERTY(BlueprintAssignable)
-	FOnSaveGameSignature OnSaveGameLoaded;
-
-	UPROPERTY(BlueprintAssignable)
-	FOnSaveGameSignature OnSaveGameWritten;
 
 	/* Initialize Subsystem, good moment to load in SaveGameSettings variables */
 	virtual void Initialize(FSubsystemCollectionBase& Collection) override;
