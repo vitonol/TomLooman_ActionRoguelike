@@ -35,6 +35,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
 	FPrimaryAssetId MonsterId;
 
+	// UPROPERTY(EditAnywhere, BlueprintReadOnly)
+	// USMonsterData* MonsterData;
+	
 	/* Relative chance to pick this monster */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
 	float Weight;

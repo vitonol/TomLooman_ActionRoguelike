@@ -12,13 +12,13 @@
 #include "SPlayerState.h"
 #include "Kismet/GameplayStatics.h"
 #include "GameFramework/GameStateBase.h"
-// #include "SMonsterData.h"
-// #include "../ActionRoguelike.h"
+#include "SMonsterData.h"
 #include "SActionComponent.h"
 #include "SSaveGameSubsystem.h"
 #include "Engine/AssetManager.h"
 // #include "Subsystems/SActorPoolingSubsystem.h"
 
+#include "ActionRoguelike.h"
 #include "SGameplayInterface.h"
 #include "SSaveGame.h"
 #include "EnvironmentQuery/EnvQuery.h"
@@ -259,6 +259,7 @@ void ASGameModeBase::OnBotSpawnQueryCompleted(TSharedPtr<FEnvQueryResult> Result
 	if (Locations.IsValidIndex(0) && MonsterTable)
 	{
 		UAssetManager& Manager = UAssetManager::Get();
+		// UAssetManager& Manager = UAssetManager::GetIfValid();
 		
 		// Apply spawn cost
 		AvailableSpawnCredit -= SelectedMonsterRow->SpawnCost;
@@ -266,6 +267,7 @@ void ASGameModeBase::OnBotSpawnQueryCompleted(TSharedPtr<FEnvQueryResult> Result
 		FPrimaryAssetId MonsterId = SelectedMonsterRow->MonsterId;
 
 		TArray<FName> Bundles;
+		// In BPs it is called Async Asset Load
 		FStreamableDelegate Delegate = FStreamableDelegate::CreateUObject(this, &ASGameModeBase::OnMonsterLoaded, MonsterId, Locations[0]);
 		Manager.LoadPrimaryAsset(MonsterId, Bundles, Delegate);
 	}
@@ -274,30 +276,29 @@ void ASGameModeBase::OnBotSpawnQueryCompleted(TSharedPtr<FEnvQueryResult> Result
 
 void ASGameModeBase::OnMonsterLoaded(FPrimaryAssetId LoadedId, FVector SpawnLocation)
 {
-	// //LogOnScreen(this, "Finished loading.", FColor::Green);
-	//
-	// UAssetManager& Manager = UAssetManager::Get();
-	//
-	// USMonsterData* MonsterData = Cast<USMonsterData>(Manager.GetPrimaryAssetObject(LoadedId));
-	// check(MonsterData);
-	//
-	// AActor* NewBot = GetWorld()->SpawnActor<AActor>(MonsterData->MonsterClass, SpawnLocation, FRotator::ZeroRotator);
-	// // Spawn might fail if colliding with environment
-	// if (NewBot)
-	// {
-	// 	// LogOnScreen(this, FString::Printf(TEXT("Spawned enemy: %s (%s)"), *GetNameSafe(NewBot), *GetNameSafe(MonsterData)));
-	//
-	// 	// Grant special actions, buffs etc.
-	// 	USActionComponent* ActionComp = Cast<USActionComponent>(NewBot->GetComponentByClass(USActionComponent::StaticClass()));
-	// 	check(ActionComp);
-	// 	
-	// 	for (TSubclassOf<USAction> ActionClass : MonsterData->Actions)
-	// 	{
-	// 		ActionComp->AddAction(NewBot, ActionClass);
-	// 	}
-	// }
+	LogOnScreen(this, "Finished loading.", FColor::Green);
+	
+	UAssetManager& Manager = UAssetManager::Get();
+	
+	USMonsterData* MonsterData = Cast<USMonsterData>(Manager.GetPrimaryAssetObject(LoadedId));
+	check(MonsterData);
+	
+	AActor* NewBot = GetWorld()->SpawnActor<AActor>(MonsterData->MonsterClass, SpawnLocation, FRotator::ZeroRotator);
+	// Spawn might fail if colliding with environment
+	if (NewBot)
+	{
+		LogOnScreen(this, FString::Printf(TEXT("Spawned enemy: %s (%s)"), *GetNameSafe(NewBot), *GetNameSafe(MonsterData)));
+	
+		// Grant special actions, buffs etc.
+		USActionComponent* ActionComp = Cast<USActionComponent>(NewBot->GetComponentByClass(USActionComponent::StaticClass()));
+		check(ActionComp);
+		
+		for (TSubclassOf<USAction> ActionClass : MonsterData->Actions)
+		{
+			ActionComp->AddAction(NewBot, ActionClass);
+		}
+	}
 }
-
 
 void ASGameModeBase::OnPowerupSpawnQueryCompleted(TSharedPtr<FEnvQueryResult> Result)
 {
