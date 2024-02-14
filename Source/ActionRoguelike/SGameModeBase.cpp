@@ -59,6 +59,10 @@ void ASGameModeBase::InitGame(const FString& MapName, const FString& Options, FS
 
 	// Optional slot name (Falls back to slot specified in SaveGameSettings class/INI otherwise)
 	FString SelectedSaveSlot = UGameplayStatics::ParseOption(Options, "SaveGame");
+	if (SelectedSaveSlot.Len() > 0)
+	{
+		SlotName = SelectedSaveSlot;
+	}
 	// SG->LoadSaveGame(SelectedSaveSlot);
 
 	LoadSaveGame();
