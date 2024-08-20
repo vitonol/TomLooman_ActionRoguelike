@@ -96,6 +96,8 @@ void ASGameModeBase::StartPlay()
 	
 	// We run the prime logic after the BeginPlay call to avoid accidentally running that on stored/primed actors
 	RequestPrimedActors();
+
+	CalculatePaths();
 }
 
 
@@ -191,7 +193,7 @@ void ASGameModeBase::SpawnBotTimerElapsed()
 
 	// UE_LOGFMT(LogGame, Log, "Found {number} alive bots.", NrOfAliveBots);
 
-	const float MaxBotCount = 40.0f;
+	constexpr uint8 MaxBotCount = 40;
 	if (NrOfAliveBots >= MaxBotCount)
 	{
 		// UE_LOGFMT(LogGame, Log, "At maximum bot capacity. Skipping bot spawn.");
@@ -423,6 +425,35 @@ void ASGameModeBase::OnActorKilled(AActor* VictimActor, AActor* Killer)
 	}
 }
 
+void ASGameModeBase::CalculatePaths()
+{
+	FGraphEventArray PathfindingTasks;
+
+	// Simulate AI characters, each with their own pathfinding request
+	for (int32 i = 0; i < 10; ++i)
+	{
+		// Spawns worker thread for each AI character's pathfinding
+		auto PathfindingThread = FFunctionGraphTask::CreateAndDispatchWhenReady([i]
+		{
+			TRACE_CPUPROFILER_EVENT_SCOPE(PathfindingTask);
+            
+			// Simulate pathfinding calculation
+			FPlatformProcess::Sleep(FMath::RandRange(0.5f, 2.0f)); // Random sleep to simulate variable pathfinding time
+            
+			GEngine->AddOnScreenDebugMessage(INDEX_NONE, 5.f, FColor::Green, FString::Printf(TEXT("AI %d finished pathfinding"), i));
+		});
+
+		PathfindingTasks.Add(PathfindingThread);
+	}
+
+	// Once all pathfinding tasks are complete, update the main thread with the results
+	auto Handle = FFunctionGraphTask::CreateAndDispatchWhenReady([]
+	{
+		TRACE_CPUPROFILER_EVENT_SCOPE(UpdateAIPaths);
+		GEngine->AddOnScreenDebugMessage(INDEX_NONE, 5.f, FColor::Blue, TEXT("All AI paths updated"));
+	}, TStatId(), &PathfindingTasks, ENamedThreads::GameThread);
+}
+
 void ASGameModeBase::WriteSaveGame()
 {
 	// Iterate all player states, we don't proper ID to match yet (Requires steam or EOS)
@@ -448,8 +479,8 @@ void ASGameModeBase::WriteSaveGame()
 		}
 		
 		FActorSaveData ActorData;
-		FName name = (FName)Actor->GetName();
-		ActorData.ActorName = name;
+		FName Name = (FName)Actor->GetName();
+		ActorData.ActorName = Name;
 		ActorData.Transform = Actor->GetActorTransform();
 		
 		// Pass the array to fill with data from Actor

@@ -74,6 +74,9 @@ protected:
 
 	virtual void PostInitializeComponents() override; // a bit better way to bind events, vs constructor
 
+	UFUNCTION(BlueprintCallable)
+	void DoStuff();
+
 	
 public:
 

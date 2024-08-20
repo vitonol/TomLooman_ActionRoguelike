@@ -9,9 +9,8 @@
 #include "GameFramework/SpringArmComponent.h"
 #include "Camera/CameraComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
-#include "Kismet/GameplayStatics.h"
+#include "ProfilingDebugging/CpuProfilerTrace.h"
 
-// Sets default values
 ASCharacter::ASCharacter()
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
@@ -40,6 +39,7 @@ void ASCharacter::PostInitializeComponents()
 	Super::PostInitializeComponents();
 	AttributeComp->OnHealthChanged.AddDynamic(this, &ASCharacter::OnHealthChanged);
 }
+
 
 FVector ASCharacter::GetPawnViewLocation() const
 {
@@ -71,20 +71,52 @@ void ASCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ASCharacter::Jump);
 }
-// Called when the game starts or when spawned
+
 void ASCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 	MID = GetMesh()->CreateDynamicMaterialInstance(0);
 }
 
-// Called every frame
+void ASCharacter::DoStuff()
+{
+
+	FGraphEventArray Tasks;
+	// instead of cloaning array, we moving it;
+	// TArray<FVector> arr;
+	// auto WorkerThread = FFunctionGraphTask::CreateAndDispatchWhenReady([arr = MoveTemp(arr)]
+	// {
+	// 	
+	// } );
+
+	for (int32 i = 0; i < 10; ++i )
+	{
+		// Spawns worker thread
+		auto WorkerThread = FFunctionGraphTask::CreateAndDispatchWhenReady([]
+		{
+			TRACE_CPUPROFILER_EVENT_SCOPE(WorkerthreadTaskThingDoesNotMatter);
+			FPlatformProcess::Sleep(5.f);//faking work
+			
+			GEngine->AddOnScreenDebugMessage(INDEX_NONE, 5.f, FColor::Yellow, TEXT("Doing things"));
+			float var{0.f};
+		} );
+		
+		Tasks.Add(WorkerThread);
+	}
+	
+	auto Handle = FFunctionGraphTask::CreateAndDispatchWhenReady([]
+	{
+		TRACE_CPUPROFILER_EVENT_SCOPE(SomethingElseNoneWorkerSlakerThread);
+		GEngine->AddOnScreenDebugMessage(INDEX_NONE, 5.f, FColor::Orange, TEXT("Finished"));
+	}, {/* the stat I want to use to see in Insights*/}, &Tasks, ENamedThreads::GameThread);
+}
+
+
 void ASCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 }
 
-// Called to bind functionality to input
 
 void ASCharacter::MoveForward(float value)
 {

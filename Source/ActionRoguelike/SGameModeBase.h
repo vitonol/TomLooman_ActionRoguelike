@@ -162,6 +162,9 @@ public:
 	UFUNCTION(BlueprintCallable, Category="SaveGame")
 	void  WriteSaveGame();
 
+	// Demonstration of the multythreading capabilities
+	void CalculatePaths();
+
 	void LoadSaveGame();
 	
 	UPROPERTY(BlueprintAssignable)
